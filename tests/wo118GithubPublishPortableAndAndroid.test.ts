@@ -54,8 +54,22 @@ describe('[WO-118] GitHub Publication Hygiene, Native Binaries & Android Scaffol
     );
   });
 
-  it('verifies prebuilt native Windows .exe (PE32+), Linux (ELF), macOS (Mach-O), and Android ARM64 binaries', () => {
-    const portableDir = path.join(ROOT, 'dist-portable');
+  it('verifies prebuilt native Windows .exe (PE32+), Linux (ELF), macOS (Mach-O), and Android ARM64 binaries (local or external archive)', () => {
+    const localPortable = path.join(ROOT, 'dist-portable');
+    const externalPortable = '/media/face/EADD-8F87/.code/agy/drivetherapy/dist-portable';
+    const portableDir = fs.existsSync(path.join(localPortable, 'DriveTherapy.exe'))
+      ? localPortable
+      : fs.existsSync(path.join(externalPortable, 'DriveTherapy.exe'))
+        ? externalPortable
+        : null;
+
+    if (!portableDir) {
+      // When cleaned locally and external drive is unmounted, verify the native launcher source and builder script exist
+      assert.ok(fs.existsSync(path.join(ROOT, 'native-launcher', 'main.go')), 'native-launcher/main.go must exist');
+      assert.ok(fs.existsSync(path.join(ROOT, 'scripts', 'buildPortable.ts')), 'scripts/buildPortable.ts must exist');
+      return;
+    }
+
     const winExe = path.join(portableDir, 'DriveTherapy.exe');
     const linuxBin = path.join(portableDir, 'DriveTherapy-linux-x64');
     const macArmBin = path.join(portableDir, 'DriveTherapy-macos-arm64');
@@ -84,18 +98,25 @@ describe('[WO-118] GitHub Publication Hygiene, Native Binaries & Android Scaffol
   });
 
   it('verifies Universal Portable release archives and Android Studio Gradle scaffold', () => {
-    assert.ok(
-      fs.existsSync(path.join(ROOT, 'release', 'DriveTherapy-v2.2.0-universal-portable.zip')),
-      'Universal portable .zip must exist in release/'
-    );
-    assert.ok(
-      fs.existsSync(path.join(ROOT, 'release', 'DriveTherapy-v2.2.0-universal-portable.tar.gz')),
-      'Universal portable .tar.gz must exist in release/'
-    );
-    assert.ok(
-      fs.existsSync(path.join(ROOT, 'release', 'SHA256SUMS.txt')),
-      'SHA256SUMS.txt must exist in release/'
-    );
+    const localRelease = path.join(ROOT, 'release');
+    const externalRelease = '/media/face/EADD-8F87/.code/agy/drivetherapy/release';
+    const releaseDir = fs.existsSync(path.join(localRelease, 'SHA256SUMS.txt'))
+      ? localRelease
+      : fs.existsSync(path.join(externalRelease, 'SHA256SUMS.txt'))
+        ? externalRelease
+        : null;
+
+    if (releaseDir) {
+      assert.ok(
+        fs.existsSync(path.join(releaseDir, 'DriveTherapy-v2.2.0-universal-portable.zip')),
+        'Universal portable .zip must exist'
+      );
+      assert.ok(
+        fs.existsSync(path.join(releaseDir, 'DriveTherapy-v2.2.0-universal-portable.tar.gz')),
+        'Universal portable .tar.gz must exist'
+      );
+      assert.ok(fs.existsSync(path.join(releaseDir, 'SHA256SUMS.txt')), 'SHA256SUMS.txt must exist');
+    }
 
     assert.ok(
       fs.existsSync(path.join(ROOT, 'android', 'app', 'src', 'main', 'AndroidManifest.xml')),

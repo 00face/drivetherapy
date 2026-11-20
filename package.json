@@ -24,7 +24,9 @@
     "qa:probe": "tsx scripts/qaProbe.ts",
     "qa:e2e": "node scripts/e2eSmokeProbe.mjs",
     "qa:browser": "node scripts/playwrightSmoke.mjs",
-    "qa:release-audit": "node scripts/generateReleaseReadiness.mjs"
+    "qa:release-audit": "node scripts/generateReleaseReadiness.mjs",
+    "oauth:import-secret": "node scripts/importOAuthSecret.mjs",
+    "gcp:setup": "bash scripts/gcpBootstrap.sh"
   },
   "overrides": {
     "@grpc/grpc-js": "^1.13.6"
