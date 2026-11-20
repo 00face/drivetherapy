@@ -1,0 +1,32 @@
+appId: com.drivetherapy.studio
+productName: Drive Therapy
+directories:
+  output: dist-electron
+  buildResources: public
+files:
+  - dist/**/*
+  - dist-portable/server.cjs
+  - electron/main.js
+  - package.json
+extraMetadata:
+  main: electron/main.js
+linux:
+  target:
+    - AppImage
+    - tar.gz
+  category: Graphics
+  executableName: drive-therapy
+  desktop:
+    Name: Drive Therapy
+    GenericName: Cloud & Media Studio
+    StartupWMClass: drive-therapy
+    Categories: Graphics;Utility;Network;
+win:
+  target:
+    - portable
+    - nsis
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.photography

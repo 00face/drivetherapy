@@ -1,0 +1,7503 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-11-17T19:09:19.212Z",
+  "sourceStandards": [
+    "FileInfo.com Extension Taxonomy",
+    "Library of Congress Sustainability of Digital Formats (FDD)",
+    "Wikipedia List of File Formats",
+    "Voidtools Everything Filter Taxonomy",
+    "IANA Media Types Registry",
+    "FileFormat.info & Aspose Format Specifications"
+  ],
+  "totalFormats": 310,
+  "totalExtensionsAndAliases": 720,
+  "formats": [
+    {
+      "extension": "3DS",
+      "aliases": [],
+      "name": "Autodesk 3D Studio Mesh",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-3ds"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Autodesk 3D Studio Mesh (3DS) file format"
+    },
+    {
+      "extension": "3FR",
+      "aliases": [
+        "FFF"
+      ],
+      "name": "Hasselblad 3FR RAW Capture",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-hasselblad-3fr"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Hasselblad 3FR RAW Capture (3FR) file format"
+    },
+    {
+      "extension": "3GP",
+      "aliases": [
+        "3G2"
+      ],
+      "name": "3GPP Mobile Multimedia Container",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/3gpp"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "3GPP Mobile Multimedia Container (3GP) file format"
+    },
+    {
+      "extension": "7Z",
+      "aliases": [],
+      "name": "7-Zip LZMA2 Archive",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-7z-compressed"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "377ABCAF271C",
+          "ascii": "7z¼¯'."
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "High-ratio open-source solid archive format using LZMA/LZMA2 compression."
+    },
+    {
+      "extension": "AAC",
+      "aliases": [
+        "ADTS"
+      ],
+      "name": "Advanced Audio Coding ADTS Stream",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/aac"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Advanced Audio Coding ADTS Stream (AAC) file format"
+    },
+    {
+      "extension": "ABC",
+      "aliases": [],
+      "name": "Alembic Baked VFX Geometry Cache",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-alembic"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Alembic Baked VFX Geometry Cache (ABC) file format"
+    },
+    {
+      "extension": "AC3",
+      "aliases": [
+        "EAC3"
+      ],
+      "name": "Dolby Digital Surround Stream",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/ac3"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Dolby Digital Surround Stream (AC3) file format"
+    },
+    {
+      "extension": "ACCDB",
+      "aliases": [
+        "ACCDE",
+        "ACCDR"
+      ],
+      "name": "Microsoft Access ACE Database",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/msaccess"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "sqlite-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Microsoft Access ACE Database (ACCDB) file format"
+    },
+    {
+      "extension": "ADOC",
+      "aliases": [
+        "ASCIIDOC"
+      ],
+      "name": "AsciiDoc Technical Manuscript",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "text/asciidoc"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "markdown-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "AsciiDoc Technical Manuscript (ADOC) file format"
+    },
+    {
+      "extension": "AFDESIGN",
+      "aliases": [],
+      "name": "Serif Affinity Designer Document",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-affinity-designer"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Serif Affinity Designer Document (AFDESIGN) file format"
+    },
+    {
+      "extension": "AFPHOTO",
+      "aliases": [],
+      "name": "Serif Affinity Photo Document",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-affinity-photo"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Serif Affinity Photo Document (AFPHOTO) file format"
+    },
+    {
+      "extension": "AFPUB",
+      "aliases": [],
+      "name": "Serif Affinity Publisher Layout",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-affinity-publisher"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Serif Affinity Publisher Layout (AFPUB) file format"
+    },
+    {
+      "extension": "AI",
+      "aliases": [
+        "AIT"
+      ],
+      "name": "Adobe Illustrator Vector Artwork",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/illustrator"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "pdf-viewer",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Adobe Illustrator Vector Artwork (AI) file format"
+    },
+    {
+      "extension": "AIFF",
+      "aliases": [
+        "AIF",
+        "AIFC"
+      ],
+      "name": "Audio Interchange File Format",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/aiff",
+        "audio/x-aiff"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "464F524D",
+          "ascii": "FORM"
+        },
+        {
+          "offset": 8,
+          "hex": "41494646",
+          "ascii": "AIFF"
+        }
+      ],
+      "containerFormat": "IFF",
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Apple IFF big-endian uncompressed PCM studio master audio format."
+    },
+    {
+      "extension": "AMR",
+      "aliases": [
+        "AWB"
+      ],
+      "name": "Adaptive Multi-Rate Voice Codec",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/amr"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Adaptive Multi-Rate Voice Codec (AMR) file format"
+    },
+    {
+      "extension": "APE",
+      "aliases": [],
+      "name": "Monkey's Audio Lossless",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-ape"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Monkey's Audio Lossless (APE) file format"
+    },
+    {
+      "extension": "APK",
+      "aliases": [
+        "AAB",
+        "XAPK"
+      ],
+      "name": "Android Application Package",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/vnd.android.package-archive"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Android Application Package (APK) file format"
+    },
+    {
+      "extension": "APNG",
+      "aliases": [],
+      "name": "Animated Portable Network Graphics",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/apng"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "89504E470D0A1A0A",
+          "ascii": ".PNG...."
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "PNG extension supporting multi-frame raster animation via acTL/fcTL chunks."
+    },
+    {
+      "extension": "ARI",
+      "aliases": [],
+      "name": "ARRI ALEXA Uncompressed ARRIRAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-arri-ari"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "ARRI ALEXA Uncompressed ARRIRAW (ARI) file format"
+    },
+    {
+      "extension": "ARROW",
+      "aliases": [
+        "IPC",
+        "FEATHER"
+      ],
+      "name": "Apache Arrow IPC Columnar Stream",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.apache.arrow.file"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Apache Arrow IPC Columnar Stream (ARROW) file format"
+    },
+    {
+      "extension": "ARW",
+      "aliases": [
+        "SRF",
+        "SR2"
+      ],
+      "name": "Sony Alpha RAW Negative",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-sony-arw"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "49492A00",
+          "ascii": "II*."
+        }
+      ],
+      "containerFormat": "TIFF-EP",
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Sony Alpha DSLR/Mirrorless RAW digital negative."
+    },
+    {
+      "extension": "ASE",
+      "aliases": [
+        "ACO",
+        "GRD",
+        "ABR",
+        "PAT"
+      ],
+      "name": "Adobe Swatch Exchange Palette",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-ase"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Adobe Swatch Exchange Palette (ASE) file format"
+    },
+    {
+      "extension": "ASS",
+      "aliases": [
+        "SSA"
+      ],
+      "name": "Advanced SubStation Alpha Script",
+      "family": "subtitle_lyric",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-ssa"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "cue-timestamps",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Advanced SubStation Alpha Script (ASS) file format"
+    },
+    {
+      "extension": "ASTC",
+      "aliases": [],
+      "name": "Adaptive Scalable Texture",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/astc"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Adaptive Scalable Texture (ASTC) file format"
+    },
+    {
+      "extension": "AU",
+      "aliases": [
+        "SND"
+      ],
+      "name": "Sun / NeXT Audio Stream",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/basic"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Sun / NeXT Audio Stream (AU) file format"
+    },
+    {
+      "extension": "AVI",
+      "aliases": [
+        "DIVX"
+      ],
+      "name": "Audio Video Interleave",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-msvideo"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "52494646",
+          "ascii": "RIFF"
+        },
+        {
+          "offset": 8,
+          "hex": "41564920",
+          "ascii": "AVI "
+        }
+      ],
+      "containerFormat": "RIFF",
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Microsoft RIFF multimedia wrapper common in legacy capture and uncompressed RGB/YUV masters."
+    },
+    {
+      "extension": "AVIF",
+      "aliases": [],
+      "name": "AV1 Image File Format",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/avif"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 4,
+          "hex": "6674797061766966",
+          "ascii": "ftypavif",
+          "brand": "avif"
+        }
+      ],
+      "containerFormat": "ISO-BMFF",
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "High-efficiency HDR/wide-gamut image container backed by AV1 intra-frame compression."
+    },
+    {
+      "extension": "AVRO",
+      "aliases": [],
+      "name": "Apache Avro Row Serialization Container",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/avro"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Apache Avro Row Serialization Container (AVRO) file format"
+    },
+    {
+      "extension": "AZW3",
+      "aliases": [
+        "AZW",
+        "KFX"
+      ],
+      "name": "Amazon Kindle Format 8 (KF8)",
+      "family": "ebook",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.amazon.ebook"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "opf-manifest",
+        "toc-metadata"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Amazon Kindle Format 8 (KF8) (AZW3) file format"
+    },
+    {
+      "extension": "BAK",
+      "aliases": [
+        "OLD",
+        "TMP",
+        "SWP",
+        "DMP",
+        "MDMP",
+        "CORE",
+        "PID",
+        "LOCK"
+      ],
+      "name": "Backup / Temporary / Crash Dump",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "application/octet-stream"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Backup / Temporary / Crash Dump (BAK) file format"
+    },
+    {
+      "extension": "BIK",
+      "aliases": [
+        "BK2",
+        "ROQ",
+        "SMK",
+        "NUT"
+      ],
+      "name": "RAD Bink Game Cutscene Video",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-bink"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "RAD Bink Game Cutscene Video (BIK) file format"
+    },
+    {
+      "extension": "BLEND",
+      "aliases": [
+        "BLEND1"
+      ],
+      "name": "Blender 3D Project Scene",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-blender"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Blender 3D Project Scene (BLEND) file format"
+    },
+    {
+      "extension": "BMP",
+      "aliases": [
+        "DIB",
+        "RLE"
+      ],
+      "name": "Windows / OS/2 Bitmap",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/bmp",
+        "image/x-ms-bmp"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "424D",
+          "ascii": "BM"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Uncompressed or RLE device-independent raster bitmap image."
+    },
+    {
+      "extension": "BPG",
+      "aliases": [],
+      "name": "Better Portable Graphics (HEVC)",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/bpg"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Better Portable Graphics (HEVC) (BPG) file format"
+    },
+    {
+      "extension": "BRAW",
+      "aliases": [],
+      "name": "Blackmagic RAW Cinema Footage",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "video/x-blackmagic-braw"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Blackmagic RAW Cinema Footage (BRAW) file format"
+    },
+    {
+      "extension": "BSON",
+      "aliases": [
+        "ODB"
+      ],
+      "name": "Binary JSON MongoDB Dump",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/bson"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Binary JSON MongoDB Dump (BSON) file format"
+    },
+    {
+      "extension": "BZ2",
+      "aliases": [
+        "BZIP2",
+        "TBZ2",
+        "TAR.BZ2"
+      ],
+      "name": "Bzip2 Compressed Stream / Tarball",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-bzip2"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "425A68",
+          "ascii": "BZh"
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Burrows-Wheeler block-sorting compressed archive stream."
+    },
+    {
+      "extension": "C",
+      "aliases": [
+        "H"
+      ],
+      "name": "C Systems Programming Source",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-csrc"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "C Systems Programming Source (C) file format"
+    },
+    {
+      "extension": "C4D",
+      "aliases": [],
+      "name": "Maxon Cinema 4D Scene",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-c4d"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "download-only",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Maxon Cinema 4D Scene (C4D) file format"
+    },
+    {
+      "extension": "CAB",
+      "aliases": [
+        "ARJ",
+        "LHA",
+        "LZH",
+        "ACE",
+        "PAR2"
+      ],
+      "name": "Microsoft Cabinet Package Archive",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/vnd.ms-cab-compressed"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft Cabinet Package Archive (CAB) file format"
+    },
+    {
+      "extension": "CBZ",
+      "aliases": [
+        "CBR",
+        "CB7",
+        "CBT"
+      ],
+      "name": "Comic Book ZIP Archive",
+      "family": "ebook",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.comicbook+zip"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "opf-manifest",
+        "toc-metadata"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Comic Book ZIP Archive (CBZ) file format"
+    },
+    {
+      "extension": "CDR",
+      "aliases": [],
+      "name": "CorelDRAW Vector Artwork",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "application/x-cdr"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "CorelDRAW Vector Artwork (CDR) file format"
+    },
+    {
+      "extension": "CGM",
+      "aliases": [],
+      "name": "Computer Graphics Metafile",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "image/cgm"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Computer Graphics Metafile (CGM) file format"
+    },
+    {
+      "extension": "CINE",
+      "aliases": [],
+      "name": "Vision Research Phantom High-Speed RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "video/x-phantom-cine"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Vision Research Phantom High-Speed RAW (CINE) file format"
+    },
+    {
+      "extension": "CLIP",
+      "aliases": [
+        "LIP"
+      ],
+      "name": "Clip Studio Paint Document",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-clip-studio"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Clip Studio Paint Document (CLIP) file format"
+    },
+    {
+      "extension": "CPP",
+      "aliases": [
+        "CC",
+        "CXX",
+        "HPP",
+        "HH",
+        "HXX"
+      ],
+      "name": "C++ Systems Source & Headers",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-c++src"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "C++ Systems Source & Headers (CPP) file format"
+    },
+    {
+      "extension": "CR2",
+      "aliases": [],
+      "name": "Canon RAW Version 2",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-canon-cr2"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "49492A00",
+          "ascii": "II*."
+        },
+        {
+          "offset": 8,
+          "hex": "43520200",
+          "ascii": "CR.."
+        }
+      ],
+      "containerFormat": "TIFF",
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Canon EOS 12/14-bit TIFF-based camera sensor RAW negative with embedded JPEG preview."
+    },
+    {
+      "extension": "CR3",
+      "aliases": [],
+      "name": "Canon RAW Version 3",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-canon-cr3"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 4,
+          "hex": "6674797063727820",
+          "ascii": "ftypcrx ",
+          "brand": "crx "
+        }
+      ],
+      "containerFormat": "ISO-BMFF",
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Modern Canon ISO-BMFF RAW negative storing CRAW/lossless streams and Dual Pixel data."
+    },
+    {
+      "extension": "CRW",
+      "aliases": [],
+      "name": "Canon CIFF RAW Image",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-canon-crw"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 6,
+          "hex": "4845415043434452",
+          "ascii": "HEAPCCDR"
+        }
+      ],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Legacy Canon CIFF RAW digital camera file."
+    },
+    {
+      "extension": "CS",
+      "aliases": [],
+      "name": "C# .NET Source File",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-csharp"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "C# .NET Source File (CS) file format"
+    },
+    {
+      "extension": "CSS",
+      "aliases": [
+        "SCSS",
+        "SASS",
+        "LESS"
+      ],
+      "name": "Cascading Style Sheets",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/css"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Cascading Style Sheets (CSS) file format"
+    },
+    {
+      "extension": "CSV",
+      "aliases": [
+        "TSV",
+        "TAB"
+      ],
+      "name": "Comma-Separated Values Table",
+      "family": "spreadsheet",
+      "category": "document",
+      "mimeTypes": [
+        "text/csv"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "tabular-columns",
+        "sheet-names"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "csv-table-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "RFC 4180 plain-text tabular exchange format with automatic column & delimiter inference."
+    },
+    {
+      "extension": "CUBE",
+      "aliases": [
+        "3DL",
+        "LOOK",
+        "CSP"
+      ],
+      "name": "Adobe / Iridas 3D Color LUT",
+      "family": "color_lut_sidecar",
+      "category": "data",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "lut-grid",
+        "xmp-tags"
+      ],
+      "viewer": "code-viewer",
+      "editor": "lut-adjuster",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Plain-text 1D/3D floating-point RGB color lookup table used across grading & photo studios."
+    },
+    {
+      "extension": "DAE",
+      "aliases": [],
+      "name": "COLLADA 3D Interchange XML",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/vnd.collada+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "COLLADA 3D Interchange XML (DAE) file format"
+    },
+    {
+      "extension": "DBF",
+      "aliases": [],
+      "name": "dBase / FoxPro / Shapefile Table",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-dbf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "dBase / FoxPro / Shapefile Table (DBF) file format"
+    },
+    {
+      "extension": "DCR",
+      "aliases": [
+        "KDC",
+        "K25"
+      ],
+      "name": "Kodak Digital Camera RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-kodak-dcr"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Kodak Digital Camera RAW (DCR) file format"
+    },
+    {
+      "extension": "DDS",
+      "aliases": [],
+      "name": "DirectDraw Surface Texture",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/vnd-ms.dds"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "44445320",
+          "ascii": "DDS "
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "GPU-ready BCn/DXTn compressed mipmapped texture & cubemap container."
+    },
+    {
+      "extension": "DEB",
+      "aliases": [],
+      "name": "Debian / Ubuntu Software Package",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/vnd.debian.binary-package"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Debian / Ubuntu Software Package (DEB) file format"
+    },
+    {
+      "extension": "DEM",
+      "aliases": [
+        "ASC",
+        "TER",
+        "BT",
+        "R16",
+        "R32",
+        "HFZ"
+      ],
+      "name": "Digital Elevation Model / Terrain Grid",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "heightfield-grid",
+        "geo-bounds",
+        "contour-isolines"
+      ],
+      "viewer": "heightmap-viewer",
+      "editor": "heightmap-terrain-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "USGS DEM, ESRI ASCII Grid, Terragen, VTP Binary Terrain, and 16/32-bit heightfield elevation maps."
+    },
+    {
+      "extension": "DESKTOP",
+      "aliases": [
+        "LNK",
+        "URL",
+        "WEBLOC",
+        "SERVICE"
+      ],
+      "name": "Freedesktop Launcher / Shortcut",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-desktop"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "code-viewer",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Freedesktop Launcher / Shortcut (DESKTOP) file format"
+    },
+    {
+      "extension": "DIA",
+      "aliases": [],
+      "name": "Dia Vector Diagram XML",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "application/x-dia-diagram"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Dia Vector Diagram XML (DIA) file format"
+    },
+    {
+      "extension": "DIF",
+      "aliases": [
+        "SLK",
+        "WK1",
+        "WK3",
+        "WK4"
+      ],
+      "name": "Data Interchange Format Spreadsheet",
+      "family": "spreadsheet",
+      "category": "document",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "tabular-columns",
+        "sheet-names"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "csv-table-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Data Interchange Format Spreadsheet (DIF) file format"
+    },
+    {
+      "extension": "DJVU",
+      "aliases": [
+        "DJV"
+      ],
+      "name": "DjVu Scanned Document Archive",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "image/vnd.djvu"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "pdf-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "DjVu Scanned Document Archive (DJVU) file format"
+    },
+    {
+      "extension": "DMG",
+      "aliases": [
+        "SPARSEIMAGE",
+        "SPARSEBUNDLE"
+      ],
+      "name": "Apple macOS UDIF Disk Image",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-apple-diskimage"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Apple macOS UDIF Disk Image (DMG) file format"
+    },
+    {
+      "extension": "DNG",
+      "aliases": [],
+      "name": "Adobe Digital Negative",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-adobe-dng"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "49492A00",
+          "ascii": "II*."
+        },
+        {
+          "offset": 0,
+          "hex": "4D4D002A",
+          "ascii": "MM.*"
+        }
+      ],
+      "containerFormat": "TIFF-EP",
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Open ISO archival camera RAW negative format preserving linear sensor CFA data and XMP."
+    },
+    {
+      "extension": "DOC",
+      "aliases": [],
+      "name": "Microsoft Word Binary Document",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/msword"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft Word Binary Document (DOC) file format"
+    },
+    {
+      "extension": "DOCKERFILE",
+      "aliases": [
+        "MAKEFILE",
+        "CMAKE",
+        "GRADLE",
+        "NIX",
+        "TF",
+        "HCL"
+      ],
+      "name": "Container Build Definition",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Container Build Definition (DOCKERFILE) file format"
+    },
+    {
+      "extension": "DOCX",
+      "aliases": [
+        "DOCM",
+        "DOTX"
+      ],
+      "name": "Office Open XML Word Document",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "504B0304",
+          "ascii": "PK.."
+        }
+      ],
+      "containerFormat": "OPC / ZIP",
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "ECMA-376 ZIP-packaged XML word processing document."
+    },
+    {
+      "extension": "DOT",
+      "aliases": [
+        "GV"
+      ],
+      "name": "Graphviz DOT Graph Description",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "text/vnd.graphviz"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Graphviz DOT Graph Description (DOT) file format"
+    },
+    {
+      "extension": "DPX",
+      "aliases": [
+        "CIN"
+      ],
+      "name": "SMPTE Digital Moving-Picture Exchange",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-dpx"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "53445058",
+          "ascii": "SDPX"
+        },
+        {
+          "offset": 0,
+          "hex": "58504453",
+          "ascii": "XPDS"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "SMPTE 268M lossless logarithmic cinema film scan and DI frame sequence format."
+    },
+    {
+      "extension": "DRAWIO",
+      "aliases": [
+        "DIO"
+      ],
+      "name": "Diagrams.net / Draw.io Diagram XML",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "application/vnd.jgraph.mxfile"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Diagrams.net / Draw.io Diagram XML (DRAWIO) file format"
+    },
+    {
+      "extension": "DSF",
+      "aliases": [
+        "DFF"
+      ],
+      "name": "DSD Stream File (1-bit SACD)",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-dsf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "DSD Stream File (1-bit SACD) (DSF) file format"
+    },
+    {
+      "extension": "DTS",
+      "aliases": [],
+      "name": "DTS Coherent Acoustics Stream",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/vnd.dts"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "DTS Coherent Acoustics Stream (DTS) file format"
+    },
+    {
+      "extension": "DUCKDB",
+      "aliases": [],
+      "name": "DuckDB Analytical OLAP Database",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-duckdb"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "sqlite-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "DuckDB Analytical OLAP Database (DUCKDB) file format"
+    },
+    {
+      "extension": "DV",
+      "aliases": [],
+      "name": "Digital Video Raw Camcorder Stream",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-dv"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Digital Video Raw Camcorder Stream (DV) file format"
+    },
+    {
+      "extension": "DWG",
+      "aliases": [],
+      "name": "AutoCAD Drawing Database",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "image/vnd.dwg"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "AutoCAD Drawing Database (DWG) file format"
+    },
+    {
+      "extension": "DXF",
+      "aliases": [
+        "DWF",
+        "DWFX"
+      ],
+      "name": "AutoCAD Drawing Exchange Format",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "image/vnd.dxf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "AutoCAD Drawing Exchange Format (DXF) file format"
+    },
+    {
+      "extension": "DYLIB",
+      "aliases": [
+        "BUNDLE"
+      ],
+      "name": "macOS Mach-O Dynamic Library",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-mach-binary"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "macOS Mach-O Dynamic Library (DYLIB) file format"
+    },
+    {
+      "extension": "ELF",
+      "aliases": [
+        "SO",
+        "APPIMAGE"
+      ],
+      "name": "Executable & Linkable Linux/UNIX Binary",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-elf"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "7F454C46",
+          "ascii": ".ELF"
+        }
+      ],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Full",
+      "description": "POSIX / Linux ELF shared library, executable, or portable AppImage bundle."
+    },
+    {
+      "extension": "EMF",
+      "aliases": [
+        "EMZ"
+      ],
+      "name": "Enhanced Windows Metafile",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "image/emf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Enhanced Windows Metafile (EMF) file format"
+    },
+    {
+      "extension": "EML",
+      "aliases": [
+        "MBOX",
+        "MSG",
+        "PST",
+        "OST"
+      ],
+      "name": "RFC 5322 Internet Email Message",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "message/rfc822"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "RFC 5322 Internet Email Message (EML) file format"
+    },
+    {
+      "extension": "EOT",
+      "aliases": [],
+      "name": "Microsoft Embedded OpenType Font",
+      "family": "font",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.ms-fontobject"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sfnt-tables",
+        "glyph-metrics"
+      ],
+      "viewer": "font-specimen",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft Embedded OpenType Font (EOT) file format"
+    },
+    {
+      "extension": "EPS",
+      "aliases": [
+        "EPSF",
+        "EPSI"
+      ],
+      "name": "Encapsulated PostScript Vector",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "application/postscript"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Encapsulated PostScript Vector (EPS) file format"
+    },
+    {
+      "extension": "EPUB",
+      "aliases": [],
+      "name": "IDPF Electronic Publication Archive",
+      "family": "ebook",
+      "category": "document",
+      "mimeTypes": [
+        "application/epub+zip"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "opf-manifest",
+        "toc-metadata"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "IDPF Electronic Publication Archive (EPUB) file format"
+    },
+    {
+      "extension": "ERF",
+      "aliases": [],
+      "name": "Epson R-D1 RAW Negative",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-epson-erf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Epson R-D1 RAW Negative (ERF) file format"
+    },
+    {
+      "extension": "EX",
+      "aliases": [
+        "EXS",
+        "ERL",
+        "HS",
+        "ML",
+        "CLJ",
+        "GROOVY"
+      ],
+      "name": "Elixir Functional Source",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-elixir"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Elixir Functional Source (EX) file format"
+    },
+    {
+      "extension": "EXE",
+      "aliases": [
+        "DLL",
+        "SYS",
+        "COM",
+        "SCR",
+        "MSI",
+        "MSP"
+      ],
+      "name": "Windows PE Executable / Dynamic Library",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/vnd.microsoft.portable-executable"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "4D5A",
+          "ascii": "MZ"
+        }
+      ],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Microsoft Portable Executable DOS-stub MZ binary container."
+    },
+    {
+      "extension": "EXR",
+      "aliases": [],
+      "name": "OpenEXR High Dynamic Range",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-exr"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "762F3101",
+          "ascii": "v/1."
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Academy Award-winning 16/32-bit float multi-channel VFX deep compositing image."
+    },
+    {
+      "extension": "FB2",
+      "aliases": [
+        "FB2Z"
+      ],
+      "name": "FictionBook 2.0 XML E-Book",
+      "family": "ebook",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-fictionbook+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "opf-manifest",
+        "toc-metadata"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "FictionBook 2.0 XML E-Book (FB2) file format"
+    },
+    {
+      "extension": "FBX",
+      "aliases": [],
+      "name": "Autodesk Filmbox 3D Scene",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/octet-stream"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Autodesk Filmbox 3D Scene (FBX) file format"
+    },
+    {
+      "extension": "FDB",
+      "aliases": [
+        "GDB"
+      ],
+      "name": "Firebird / InterBase Database",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-firebird"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Firebird / InterBase Database (FDB) file format"
+    },
+    {
+      "extension": "FIG",
+      "aliases": [],
+      "name": "Figma Local Design File",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-figma"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Figma Local Design File (FIG) file format"
+    },
+    {
+      "extension": "FITS",
+      "aliases": [
+        "FIT",
+        "FTS"
+      ],
+      "name": "Flexible Image Transport System (Astronomy)",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/fits"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Flexible Image Transport System (Astronomy) (FITS) file format"
+    },
+    {
+      "extension": "FLAC",
+      "aliases": [],
+      "name": "Free Lossless Audio Codec",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/flac",
+        "audio/x-flac"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "664C6143",
+          "ascii": "fLaC"
+        }
+      ],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Open bit-exact compressed audio archive format with STREAMINFO header and Vorbis/picture blocks."
+    },
+    {
+      "extension": "FLIF",
+      "aliases": [],
+      "name": "Free Lossless Image Format",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/flif"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Free Lossless Image Format (FLIF) file format"
+    },
+    {
+      "extension": "FLV",
+      "aliases": [],
+      "name": "Adobe Flash Video Container",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-flv"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "464C5601",
+          "ascii": "FLV."
+        }
+      ],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Legacy Macromedia/Adobe web video delivery container."
+    },
+    {
+      "extension": "GCODE",
+      "aliases": [
+        "3MF"
+      ],
+      "name": "CNC / 3D Printer Toolpath Commands",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "text/x.gcode"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "CNC / 3D Printer Toolpath Commands (GCODE) file format"
+    },
+    {
+      "extension": "GDOC",
+      "aliases": [],
+      "name": "Google Docs Cloud Document",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.google-apps.document"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Google Workspace native cloud word-processing document."
+    },
+    {
+      "extension": "GEOJSON",
+      "aliases": [
+        "TOPOJSON",
+        "WKT"
+      ],
+      "name": "GeoJSON Geographic Feature Collection",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/geo+json"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "json-tree-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "GeoJSON Geographic Feature Collection (GEOJSON) file format"
+    },
+    {
+      "extension": "GGUF",
+      "aliases": [
+        "PT",
+        "PTH"
+      ],
+      "name": "GGML Quantized LLM Weights Format",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-gguf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "GGML Quantized LLM Weights Format (GGUF) file format"
+    },
+    {
+      "extension": "GIF",
+      "aliases": [],
+      "name": "Graphics Interchange Format",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/gif"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "47494638",
+          "ascii": "GIF8"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "8-bit indexed LZW compressed image supporting multi-frame animation and binary transparency."
+    },
+    {
+      "extension": "GLB",
+      "aliases": [],
+      "name": "Binary glTF 2.0 3D Asset",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/gltf-binary"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "676C5446",
+          "ascii": "glTF"
+        }
+      ],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Khronos PBR binary 3D scene and animation transmission format (\"JPEG of 3D\")."
+    },
+    {
+      "extension": "GLSL",
+      "aliases": [
+        "VERT",
+        "FRAG",
+        "FS",
+        "VS",
+        "HLSL",
+        "WGSL",
+        "FX",
+        "SHADER",
+        "CSH"
+      ],
+      "name": "OpenGL / WebGL / WGSL GPU Shader Source",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-glsl"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding",
+        "shader-uniforms"
+      ],
+      "viewer": "shader-viewer",
+      "editor": "shader-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "OpenGL GLSL, WebGPU WGSL, HLSL, and Shadertoy GPU fragment/vertex shader source."
+    },
+    {
+      "extension": "GLTF",
+      "aliases": [],
+      "name": "GL Transmission Format JSON",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/gltf+json"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "GL Transmission Format JSON (GLTF) file format"
+    },
+    {
+      "extension": "GO",
+      "aliases": [],
+      "name": "Go Language Source File",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-go"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Go Language Source File (GO) file format"
+    },
+    {
+      "extension": "GPR",
+      "aliases": [],
+      "name": "GoPro RAW (VC-5 / DNG)",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-gopro-gpr"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "GoPro RAW (VC-5 / DNG) (GPR) file format"
+    },
+    {
+      "extension": "GPX",
+      "aliases": [],
+      "name": "GPS Exchange Format Tracks & Waypoints",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/gpx+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "GPS Exchange Format Tracks & Waypoints (GPX) file format"
+    },
+    {
+      "extension": "GRAPHML",
+      "aliases": [],
+      "name": "GraphML Topology Graph XML",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/graphml+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "GraphML Topology Graph XML (GRAPHML) file format"
+    },
+    {
+      "extension": "GRAPHQL",
+      "aliases": [
+        "GQL",
+        "PROTO",
+        "THRIFT"
+      ],
+      "name": "GraphQL API Schema & Queries",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "application/graphql"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "GraphQL API Schema & Queries (GRAPHQL) file format"
+    },
+    {
+      "extension": "GSHEET",
+      "aliases": [],
+      "name": "Google Sheets Cloud Workbook",
+      "family": "spreadsheet",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.google-apps.spreadsheet"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "tabular-columns",
+        "sheet-names"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "csv-table-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Google Sheets Cloud Workbook (GSHEET) file format"
+    },
+    {
+      "extension": "GSLIDES",
+      "aliases": [],
+      "name": "Google Slides Cloud Deck",
+      "family": "presentation",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.google-apps.presentation"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "slide-deck-manifest",
+        "notes"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Google Slides Cloud Deck (GSLIDES) file format"
+    },
+    {
+      "extension": "GXF",
+      "aliases": [],
+      "name": "SMPTE General Exchange Format",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "application/gxf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "SMPTE General Exchange Format (GXF) file format"
+    },
+    {
+      "extension": "GZ",
+      "aliases": [
+        "GZIP",
+        "TGZ",
+        "TAR.GZ"
+      ],
+      "name": "Gzip Compressed Stream / Tarball",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/gzip"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "1F8B08",
+          "ascii": "..."
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Full",
+      "description": "RFC 1952 DEFLATE compressed single file or POSIX .tar.gz tarball."
+    },
+    {
+      "extension": "H264",
+      "aliases": [
+        "264"
+      ],
+      "name": "Elementary AVC / H.264 Bitstream",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/h264"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Elementary AVC / H.264 Bitstream (H264) file format"
+    },
+    {
+      "extension": "H265",
+      "aliases": [
+        "HEVC",
+        "265"
+      ],
+      "name": "Elementary HEVC / H.265 Bitstream",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/h265"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Elementary HEVC / H.265 Bitstream (H265) file format"
+    },
+    {
+      "extension": "HDF5",
+      "aliases": [
+        "H5"
+      ],
+      "name": "Hierarchical Data Format v5",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-hdf5"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Hierarchical Data Format v5 (HDF5) file format"
+    },
+    {
+      "extension": "HDR",
+      "aliases": [
+        "RGBE",
+        "XYZE"
+      ],
+      "name": "Radiance RGBE High Dynamic Range",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/vnd.radiance"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "233F52414449414E",
+          "ascii": "#?RADIAN"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Floating-point RGBE environment map and lighting image format."
+    },
+    {
+      "extension": "HEIC",
+      "aliases": [
+        "HEIF",
+        "HIF"
+      ],
+      "name": "High Efficiency Image Container (HEVC)",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/heic",
+        "image/heif"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 4,
+          "hex": "6674797068656963",
+          "ascii": "ftypheic",
+          "brand": "heic"
+        }
+      ],
+      "containerFormat": "ISO-BMFF",
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "ISO Base Media container encapsulating HEVC intra-coded stills, Live Photos, and depth maps."
+    },
+    {
+      "extension": "HEX",
+      "aliases": [
+        "SREC"
+      ],
+      "name": "Intel HEX / Motorola SREC Firmware Image",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "code-viewer",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Intel HEX / Motorola SREC Firmware Image (HEX) file format"
+    },
+    {
+      "extension": "HGT",
+      "aliases": [
+        "SRTM"
+      ],
+      "name": "NASA SRTM Elevation Heightmap Grid",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/octet-stream"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "heightfield-16bit",
+        "geo-bounds"
+      ],
+      "viewer": "heightmap-viewer",
+      "editor": "heightmap-terrain-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "NASA Shuttle Radar Topography Mission 16-bit signed integer elevation heightfield."
+    },
+    {
+      "extension": "HTML",
+      "aliases": [
+        "HTM",
+        "XHTML"
+      ],
+      "name": "HyperText Markup Language",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/html"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "HyperText Markup Language (HTML) file format"
+    },
+    {
+      "extension": "IBD",
+      "aliases": [
+        "FRM",
+        "MYD",
+        "MYI"
+      ],
+      "name": "MySQL / InnoDB Tablespace File",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-mysql-ibd"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "MySQL / InnoDB Tablespace File (IBD) file format"
+    },
+    {
+      "extension": "ICC",
+      "aliases": [
+        "ICM"
+      ],
+      "name": "ICC Color Management Profile",
+      "family": "color_lut_sidecar",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.iccprofile"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 36,
+          "hex": "61637370",
+          "ascii": "acsp"
+        }
+      ],
+      "metadataParsers": [
+        "lut-grid",
+        "xmp-tags"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "ISO 15076 International Color Consortium device characterization profile (sRGB, Display P3, CMYK)."
+    },
+    {
+      "extension": "ICNS",
+      "aliases": [],
+      "name": "Apple macOS Icon Image",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/icns"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "69636E73",
+          "ascii": "icns"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Apple icon container bundling multi-scale retina PNG/ARGB icon representations."
+    },
+    {
+      "extension": "ICO",
+      "aliases": [
+        "CUR"
+      ],
+      "name": "Windows Icon Resource",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-icon",
+        "image/vnd.microsoft.icon"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "00000100"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Multi-resolution Windows icon or cursor container wrapping BMP/PNG images."
+    },
+    {
+      "extension": "ICS",
+      "aliases": [
+        "ICAL",
+        "IFB"
+      ],
+      "name": "iCalendar Schedule Event File",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "text/calendar"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "iCalendar Schedule Event File (ICS) file format"
+    },
+    {
+      "extension": "IFC",
+      "aliases": [],
+      "name": "BuildingSMART BIM Data Model",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/ifc"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "BuildingSMART BIM Data Model (IFC) file format"
+    },
+    {
+      "extension": "IGES",
+      "aliases": [
+        "IGS",
+        "NURBS"
+      ],
+      "name": "Initial Graphics Exchange Spec CAD / NURBS",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/iges"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Initial Graphics Exchange Spec CAD / NURBS (IGES) file format"
+    },
+    {
+      "extension": "IIQ",
+      "aliases": [],
+      "name": "Phase One Intelligent Image Quality RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-phaseone-iiq"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Phase One Intelligent Image Quality RAW (IIQ) file format"
+    },
+    {
+      "extension": "IMG",
+      "aliases": [
+        "IMA",
+        "DD",
+        "BIN",
+        "CUE",
+        "NRG",
+        "MDS"
+      ],
+      "name": "Raw Disk Sector Image",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-raw-disk-image"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Raw Disk Sector Image (IMG) file format"
+    },
+    {
+      "extension": "INDD",
+      "aliases": [
+        "IDML",
+        "INDT"
+      ],
+      "name": "Adobe InDesign Page Layout",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-indesign"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Adobe InDesign Page Layout (INDD) file format"
+    },
+    {
+      "extension": "INI",
+      "aliases": [
+        "CFG",
+        "CONF",
+        "PROPERTIES",
+        "CNF",
+        "ENV"
+      ],
+      "name": "INI / Properties Configuration File",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "INI / Properties Configuration File (INI) file format"
+    },
+    {
+      "extension": "IPA",
+      "aliases": [
+        "PKG",
+        "FLATPAK",
+        "SNAP"
+      ],
+      "name": "Apple iOS Application Package",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/octet-stream"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Apple iOS Application Package (IPA) file format"
+    },
+    {
+      "extension": "IPYNB",
+      "aliases": [],
+      "name": "Jupyter Interactive Notebook JSON",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-ipynb+json"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "json-tree-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Jupyter Interactive Notebook JSON (IPYNB) file format"
+    },
+    {
+      "extension": "ISO",
+      "aliases": [
+        "UDF"
+      ],
+      "name": "ISO 9660 Optical Disc Image",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-iso9660-image"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 32769,
+          "hex": "4344303031",
+          "ascii": "CD001"
+        }
+      ],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Full",
+      "description": "Standard sector-level CD/DVD/Blu-ray filesystem image."
+    },
+    {
+      "extension": "JAR",
+      "aliases": [
+        "WHL",
+        "EGG",
+        "NUPKG",
+        "GEM",
+        "VSIX",
+        "CRATE"
+      ],
+      "name": "Java Archive Bundle",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/java-archive"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Java Archive Bundle (JAR) file format"
+    },
+    {
+      "extension": "JAVA",
+      "aliases": [],
+      "name": "Java Source Class File",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-java-source"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Java Source Class File (JAVA) file format"
+    },
+    {
+      "extension": "JP2",
+      "aliases": [
+        "J2K",
+        "J2C",
+        "JPF",
+        "JPX",
+        "JPM"
+      ],
+      "name": "JPEG 2000 Core Part 1",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/jp2",
+        "image/jpx"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "0000000C6A502020",
+          "ascii": "....jP  "
+        }
+      ],
+      "containerFormat": "JP2",
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Wavelet-based archival imaging standard used heavily by Library of Congress collections."
+    },
+    {
+      "extension": "JPG",
+      "aliases": [
+        "JPEG",
+        "JPE",
+        "JFIF",
+        "JIF"
+      ],
+      "name": "JPEG Image (ISO/IEC 10918)",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/jpeg"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "FFD8FF",
+          "ascii": "ÿØÿ"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": false,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Lossy compressed continuous-tone raster photography standard with EXIF/XMP segments."
+    },
+    {
+      "extension": "JS",
+      "aliases": [
+        "MJS",
+        "CJS"
+      ],
+      "name": "JavaScript ES Module / Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "application/javascript"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "JavaScript ES Module / Script (JS) file format"
+    },
+    {
+      "extension": "JSON",
+      "aliases": [
+        "JSONL",
+        "NDJSON",
+        "JSON5",
+        "JSONC",
+        "HAR",
+        "DTBACKUP"
+      ],
+      "name": "JavaScript Object Notation (RFC 8259)",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/json"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "json-tree-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Universal structured key/value & array data interchange format."
+    },
+    {
+      "extension": "JSX",
+      "aliases": [],
+      "name": "JavaScript React JSX Component",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/jsx"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "JavaScript React JSX Component (JSX) file format"
+    },
+    {
+      "extension": "JXL",
+      "aliases": [],
+      "name": "JPEG XL Image",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/jxl"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "FF0A"
+        },
+        {
+          "offset": 0,
+          "hex": "0000000C4A584C20",
+          "ascii": "....JXL "
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Next-generation royalty-free image coding supporting lossless JPEG recompression and HDR."
+    },
+    {
+      "extension": "KDBX",
+      "aliases": [
+        "KDB"
+      ],
+      "name": "KeePass 2.x Encrypted Vault",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-keepass2"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "KeePass 2.x Encrypted Vault (KDBX) file format"
+    },
+    {
+      "extension": "KEY",
+      "aliases": [],
+      "name": "Apple Keynote Presentation",
+      "family": "presentation",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.apple.keynote"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "slide-deck-manifest",
+        "notes"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Apple Keynote Presentation (KEY) file format"
+    },
+    {
+      "extension": "KML",
+      "aliases": [
+        "GML"
+      ],
+      "name": "Keyhole Markup Language Spatial XML",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.google-earth.kml+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Keyhole Markup Language Spatial XML (KML) file format"
+    },
+    {
+      "extension": "KMZ",
+      "aliases": [],
+      "name": "Compressed KML Spatial Package",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.google-earth.kmz"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Compressed KML Spatial Package (KMZ) file format"
+    },
+    {
+      "extension": "KRA",
+      "aliases": [
+        "KRZ"
+      ],
+      "name": "Krita Layered Painting Document",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-krita"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Krita Layered Painting Document (KRA) file format"
+    },
+    {
+      "extension": "KT",
+      "aliases": [
+        "KTS"
+      ],
+      "name": "Kotlin / Script Source",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-kotlin"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Kotlin / Script Source (KT) file format"
+    },
+    {
+      "extension": "KTX",
+      "aliases": [
+        "KTX2"
+      ],
+      "name": "Khronos OpenGL/Vulkan Texture",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/ktx",
+        "image/ktx2"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "AB4B5458",
+          "ascii": ".KTX"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Khronos GPU container for Basis Universal / ETC2 / ASTC supercompressed textures."
+    },
+    {
+      "extension": "LBM",
+      "aliases": [
+        "ILBM"
+      ],
+      "name": "Amiga IFF ILBM Image",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-ilbm"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Amiga IFF ILBM Image (LBM) file format"
+    },
+    {
+      "extension": "LIT",
+      "aliases": [
+        "LRF"
+      ],
+      "name": "Microsoft Reader Legacy E-Book",
+      "family": "ebook",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-ms-reader"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "opf-manifest",
+        "toc-metadata"
+      ],
+      "viewer": "download-only",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft Reader Legacy E-Book (LIT) file format"
+    },
+    {
+      "extension": "LRC",
+      "aliases": [],
+      "name": "Synchronized Karaoke Lyrics File",
+      "family": "subtitle_lyric",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-lrc"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "cue-timestamps",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Synchronized Karaoke Lyrics File (LRC) file format"
+    },
+    {
+      "extension": "LUA",
+      "aliases": [],
+      "name": "Lua Embedded Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-lua"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Lua Embedded Script (LUA) file format"
+    },
+    {
+      "extension": "LZ4",
+      "aliases": [],
+      "name": "LZ4 Ultra-Fast Frame Compression",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-lz4"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "LZ4 Ultra-Fast Frame Compression (LZ4) file format"
+    },
+    {
+      "extension": "M4A",
+      "aliases": [
+        "M4B",
+        "M4P",
+        "M4R",
+        "ALAC",
+        "CAF"
+      ],
+      "name": "MPEG-4 Audio (AAC / ALAC)",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/mp4",
+        "audio/x-m4a"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 4,
+          "hex": "667479704D344120",
+          "ascii": "ftypM4A ",
+          "brand": "M4A "
+        }
+      ],
+      "containerFormat": "ISO-BMFF",
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "ISO-BMFF audio-only wrapper holding AAC perceptual audio or Apple Lossless (ALAC) streams."
+    },
+    {
+      "extension": "MA",
+      "aliases": [
+        "MB"
+      ],
+      "name": "Autodesk Maya ASCII / Binary",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-maya"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "code-viewer",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Autodesk Maya ASCII / Binary (MA) file format"
+    },
+    {
+      "extension": "MAT",
+      "aliases": [],
+      "name": "MATLAB Workspace Binary Array",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-matlab-data"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "MATLAB Workspace Binary Array (MAT) file format"
+    },
+    {
+      "extension": "MD",
+      "aliases": [
+        "MARKDOWN",
+        "MDX"
+      ],
+      "name": "Markdown Rich Prose Document",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "text/markdown"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "markdown-viewer",
+      "editor": "text-code-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Lightweight markup language supporting headings, tables, fenced code blocks, and YAML frontmatter."
+    },
+    {
+      "extension": "MDB",
+      "aliases": [],
+      "name": "Microsoft Access Jet Database",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-msaccess"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "sqlite-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft Access Jet Database (MDB) file format"
+    },
+    {
+      "extension": "MDF",
+      "aliases": [
+        "LDF",
+        "NDF"
+      ],
+      "name": "SQL Server Primary Database File",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-mssql-mdf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "SQL Server Primary Database File (MDF) file format"
+    },
+    {
+      "extension": "MEF",
+      "aliases": [],
+      "name": "Mamiya Electronic RAW Format",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-mamiya-mef"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Mamiya Electronic RAW Format (MEF) file format"
+    },
+    {
+      "extension": "MID",
+      "aliases": [
+        "MIDI",
+        "KAR",
+        "RMI"
+      ],
+      "name": "Standard MIDI Sequence",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/midi",
+        "audio/x-midi"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "4D546864",
+          "ascii": "MThd"
+        }
+      ],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Musical Instrument Digital Interface multi-track note/controller event sequence."
+    },
+    {
+      "extension": "MKV",
+      "aliases": [
+        "MK3D"
+      ],
+      "name": "Matroska Open Multimedia Container",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-matroska"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "1A45DFA3",
+          "ascii": ".Eß£"
+        }
+      ],
+      "containerFormat": "EBML",
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Extensible EBML container housing unlimited video, lossless audio, chapter, and subtitle tracks."
+    },
+    {
+      "extension": "MNG",
+      "aliases": [],
+      "name": "Multiple-image Network Graphics",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "video/x-mng"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Multiple-image Network Graphics (MNG) file format"
+    },
+    {
+      "extension": "MOBI",
+      "aliases": [
+        "PRC"
+      ],
+      "name": "Mobipocket / Kindle E-Book",
+      "family": "ebook",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-mobipocket-ebook"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "opf-manifest",
+        "toc-metadata"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Mobipocket / Kindle E-Book (MOBI) file format"
+    },
+    {
+      "extension": "MOD",
+      "aliases": [
+        "S3M",
+        "XM",
+        "IT"
+      ],
+      "name": "Amiga ProTracker Module",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-mod"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Amiga ProTracker Module (MOD) file format"
+    },
+    {
+      "extension": "MOS",
+      "aliases": [],
+      "name": "Leaf Aptus Digital Back RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-leaf-mos"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Leaf Aptus Digital Back RAW (MOS) file format"
+    },
+    {
+      "extension": "MOV",
+      "aliases": [
+        "QT",
+        "PRORES"
+      ],
+      "name": "Apple QuickTime Movie Container",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/quicktime"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 4,
+          "hex": "6674797071742020",
+          "ascii": "ftypqt  ",
+          "brand": "qt  "
+        }
+      ],
+      "containerFormat": "QuickTime / ISO-BMFF",
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Apple QuickTime wrapper used broadly in cinema ProRes production and camera capture."
+    },
+    {
+      "extension": "MP3",
+      "aliases": [
+        "MP2",
+        "MP1"
+      ],
+      "name": "MPEG-1 Audio Layer III",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/mpeg",
+        "audio/mp3"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "494433",
+          "ascii": "ID3"
+        },
+        {
+          "offset": 0,
+          "hex": "FFFB"
+        }
+      ],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isLossless": false,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Universal perceptual audio format with ID3v1/ID3v2 metadata frames."
+    },
+    {
+      "extension": "MP4",
+      "aliases": [
+        "M4V",
+        "MP4V",
+        "F4V"
+      ],
+      "name": "MPEG-4 Part 14 Container",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/mp4"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 4,
+          "hex": "6674797069736F6D",
+          "ascii": "ftypisom",
+          "brand": "isom"
+        },
+        {
+          "offset": 4,
+          "hex": "667479706D703432",
+          "ascii": "ftypmp42",
+          "brand": "mp42"
+        }
+      ],
+      "containerFormat": "ISO-BMFF",
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Universal ISO Base Media File Format streaming container for H.264/HEVC/AV1 video and AAC audio."
+    },
+    {
+      "extension": "MPC",
+      "aliases": [
+        "MP+"
+      ],
+      "name": "Musepack Variable Bitrate Audio",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-musepack"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Musepack Variable Bitrate Audio (MPC) file format"
+    },
+    {
+      "extension": "MPG",
+      "aliases": [
+        "MPEG",
+        "MPE",
+        "M1V",
+        "M2V",
+        "MPV"
+      ],
+      "name": "MPEG-1 / MPEG-2 Program Stream",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/mpeg"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "MPEG-1 / MPEG-2 Program Stream (MPG) file format"
+    },
+    {
+      "extension": "MRW",
+      "aliases": [],
+      "name": "Konica Minolta DiMAGE RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-minolta-mrw"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Konica Minolta DiMAGE RAW (MRW) file format"
+    },
+    {
+      "extension": "MTS",
+      "aliases": [
+        "M2TS",
+        "M2T"
+      ],
+      "name": "MPEG Transport Stream (AVCHD / TS)",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/mp2t"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "MPEG Transport Stream (AVCHD / TS) (MTS) file format"
+    },
+    {
+      "extension": "MXF",
+      "aliases": [],
+      "name": "SMPTE Material eXchange Format",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "application/mxf"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "060E2B34",
+          "ascii": "..+4"
+        }
+      ],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "SMPTE broadcast & cinema archival wrapper for XDCAM, DNxHD, ProRes, and IMF."
+    },
+    {
+      "extension": "NC",
+      "aliases": [
+        "CDF",
+        "NC4"
+      ],
+      "name": "NetCDF Scientific Array Dataset",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-netcdf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "NetCDF Scientific Array Dataset (NC) file format"
+    },
+    {
+      "extension": "NEF",
+      "aliases": [
+        "NRW"
+      ],
+      "name": "Nikon Electronic Format RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-nikon-nef"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "49492A00",
+          "ascii": "II*."
+        },
+        {
+          "offset": 0,
+          "hex": "4D4D002A",
+          "ascii": "MM.*"
+        }
+      ],
+      "containerFormat": "TIFF-EP",
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Nikon DSLR/Mirrorless 12/14-bit uncompressed or lossless NEF RAW image."
+    },
+    {
+      "extension": "NPY",
+      "aliases": [
+        "NPZ",
+        "PKL",
+        "PICKLE"
+      ],
+      "name": "NumPy Binary Tensor Archive",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-npy"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "NumPy Binary Tensor Archive (NPY) file format"
+    },
+    {
+      "extension": "NUMBERS",
+      "aliases": [],
+      "name": "Apple Numbers Workbook",
+      "family": "spreadsheet",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.apple.numbers"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "tabular-columns",
+        "sheet-names"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "csv-table-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Apple Numbers Workbook (NUMBERS) file format"
+    },
+    {
+      "extension": "OBJ",
+      "aliases": [
+        "MTL"
+      ],
+      "name": "Wavefront 3D Object Mesh",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/obj"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Wavefront 3D Object Mesh (OBJ) file format"
+    },
+    {
+      "extension": "ODG",
+      "aliases": [],
+      "name": "OpenDocument Drawing Vector",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "application/vnd.oasis.opendocument.graphics"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "OpenDocument Drawing Vector (ODG) file format"
+    },
+    {
+      "extension": "ODP",
+      "aliases": [
+        "OTP"
+      ],
+      "name": "OpenDocument Presentation",
+      "family": "presentation",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.oasis.opendocument.presentation"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "slide-deck-manifest",
+        "notes"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "OpenDocument Presentation (ODP) file format"
+    },
+    {
+      "extension": "ODS",
+      "aliases": [
+        "OTS"
+      ],
+      "name": "OpenDocument Spreadsheet",
+      "family": "spreadsheet",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.oasis.opendocument.spreadsheet"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "tabular-columns",
+        "sheet-names"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "csv-table-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "OpenDocument Spreadsheet (ODS) file format"
+    },
+    {
+      "extension": "ODT",
+      "aliases": [
+        "OTT"
+      ],
+      "name": "OpenDocument Text Archive",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.oasis.opendocument.text"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "OpenDocument Text Archive (ODT) file format"
+    },
+    {
+      "extension": "OGG",
+      "aliases": [
+        "OGA"
+      ],
+      "name": "Ogg Vorbis / Xiph Container Audio",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/ogg"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "4F676753",
+          "ascii": "OggS"
+        }
+      ],
+      "containerFormat": "Ogg",
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Open-source Xiph Ogg bitstream container housing Vorbis, FLAC, or Speex audio."
+    },
+    {
+      "extension": "OGV",
+      "aliases": [
+        "OGM"
+      ],
+      "name": "Ogg Theora / Opus Video",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/ogg"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "4F676753",
+          "ascii": "OggS"
+        }
+      ],
+      "containerFormat": "Ogg",
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Xiph.org open bitstream container for Ogg Theora and Dirac video streams."
+    },
+    {
+      "extension": "ONNX",
+      "aliases": [
+        "TFLITE",
+        "PB"
+      ],
+      "name": "Open Neural Network Exchange Graph",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-onnx"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Open Neural Network Exchange Graph (ONNX) file format"
+    },
+    {
+      "extension": "OPUS",
+      "aliases": [
+        "SPX"
+      ],
+      "name": "IETF Opus Interactive Audio Codec",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/opus"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "4F676753",
+          "ascii": "OggS"
+        }
+      ],
+      "containerFormat": "Ogg",
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "RFC 6716 ultra-low-latency hybrid speech and high-fidelity music codec."
+    },
+    {
+      "extension": "ORA",
+      "aliases": [],
+      "name": "OpenRaster Layered Image Archive",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "image/openraster"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "OpenRaster Layered Image Archive (ORA) file format"
+    },
+    {
+      "extension": "ORC",
+      "aliases": [],
+      "name": "Apache Optimized Row Columnar Store",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-orc"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Apache Optimized Row Columnar Store (ORC) file format"
+    },
+    {
+      "extension": "ORF",
+      "aliases": [
+        "ORI"
+      ],
+      "name": "Olympus / OM System RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-olympus-orf"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "4949524F",
+          "ascii": "IIRO"
+        }
+      ],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Olympus / OM Digital Solutions ORF camera RAW file."
+    },
+    {
+      "extension": "ORG",
+      "aliases": [],
+      "name": "GNU Emacs Org-Mode Document",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-org"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "markdown-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "GNU Emacs Org-Mode Document (ORG) file format"
+    },
+    {
+      "extension": "OSM",
+      "aliases": [
+        "PBF",
+        "MIF"
+      ],
+      "name": "OpenStreetMap XML / PBF Map Data",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.openstreetmap.data+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "heightmap-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "OpenStreetMap XML / PBF Map Data (OSM) file format"
+    },
+    {
+      "extension": "OTF",
+      "aliases": [],
+      "name": "OpenType CFF / SFNT Font",
+      "family": "font",
+      "category": "data",
+      "mimeTypes": [
+        "font/otf"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "4F54544F",
+          "ascii": "OTTO"
+        }
+      ],
+      "metadataParsers": [
+        "sfnt-tables",
+        "glyph-metrics"
+      ],
+      "viewer": "font-specimen",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "ISO 14496-22 Open Font Format supporting PostScript cubic curves & OpenType layout features."
+    },
+    {
+      "extension": "P12",
+      "aliases": [
+        "PFX",
+        "GPG",
+        "PGP"
+      ],
+      "name": "PKCS #12 Cryptographic Archive",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-pkcs12"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "PKCS #12 Cryptographic Archive (P12) file format"
+    },
+    {
+      "extension": "PAGES",
+      "aliases": [],
+      "name": "Apple Pages Document Package",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.apple.pages"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Apple Pages Document Package (PAGES) file format"
+    },
+    {
+      "extension": "PARQUET",
+      "aliases": [],
+      "name": "Apache Parquet Columnar Store",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.apache.parquet"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "50415231",
+          "ascii": "PAR1"
+        }
+      ],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "High-efficiency compressed columnar analytics file format for big data lakes."
+    },
+    {
+      "extension": "PBM",
+      "aliases": [],
+      "name": "Portable Bitmap (Netpbm)",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-portable-bitmap"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Portable Bitmap (Netpbm) (PBM) file format"
+    },
+    {
+      "extension": "PCAP",
+      "aliases": [
+        "PCAPNG"
+      ],
+      "name": "Network Packet Capture (Libpcap)",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.tcpdump.pcap"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Network Packet Capture (Libpcap) (PCAP) file format"
+    },
+    {
+      "extension": "PCX",
+      "aliases": [],
+      "name": "ZSoft PC Paintbrush",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-pcx"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "ZSoft PC Paintbrush (PCX) file format"
+    },
+    {
+      "extension": "PDF",
+      "aliases": [],
+      "name": "Portable Document Format (ISO 32000)",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/pdf"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "255044462D",
+          "ascii": "%PDF-"
+        }
+      ],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "pdf-viewer",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "ISO archival fixed-layout document supporting vector fonts, forms, annotations, and PDF/A."
+    },
+    {
+      "extension": "PEF",
+      "aliases": [
+        "PTX"
+      ],
+      "name": "Pentax / Ricoh RAW Negative",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-pentax-pef"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Pentax / Ricoh RAW Negative (PEF) file format"
+    },
+    {
+      "extension": "PEM",
+      "aliases": [
+        "CRT",
+        "CER",
+        "DER",
+        "CSR"
+      ],
+      "name": "Privacy-Enhanced Mail X.509 Certificate / Key",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-pem-file"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "code-viewer",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Privacy-Enhanced Mail X.509 Certificate / Key (PEM) file format"
+    },
+    {
+      "extension": "PFB",
+      "aliases": [
+        "PFM",
+        "AFM",
+        "BDF",
+        "PCF",
+        "FNT",
+        "FON"
+      ],
+      "name": "Adobe Type 1 PostScript Font",
+      "family": "font",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-font-type1"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sfnt-tables",
+        "glyph-metrics"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Adobe Type 1 PostScript Font (PFB) file format"
+    },
+    {
+      "extension": "PGM",
+      "aliases": [],
+      "name": "Portable Graymap (Netpbm)",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-portable-graymap"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Portable Graymap (Netpbm) (PGM) file format"
+    },
+    {
+      "extension": "PHP",
+      "aliases": [],
+      "name": "PHP Hypertext Preprocessor",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-httpd-php"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "PHP Hypertext Preprocessor (PHP) file format"
+    },
+    {
+      "extension": "PL",
+      "aliases": [
+        "PM"
+      ],
+      "name": "Perl Source Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-perl"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Perl Source Script (PL) file format"
+    },
+    {
+      "extension": "PLT",
+      "aliases": [],
+      "name": "HPGL Plotter Vector Commands",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "application/vnd.hp-hpgl"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "HPGL Plotter Vector Commands (PLT) file format"
+    },
+    {
+      "extension": "PLY",
+      "aliases": [],
+      "name": "Polygon / Stanford Point Cloud",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-ply"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Polygon / Stanford Point Cloud (PLY) file format"
+    },
+    {
+      "extension": "PNG",
+      "aliases": [],
+      "name": "Portable Network Graphics",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/png"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "89504E470D0A1A0A",
+          "ascii": ".PNG...."
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "W3C lossless compressed raster format with alpha channel and IHDR/tEXt chunks."
+    },
+    {
+      "extension": "PPM",
+      "aliases": [
+        "PNM",
+        "PAM"
+      ],
+      "name": "Portable Pixmap (Netpbm)",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-portable-pixmap"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Portable Pixmap (Netpbm) (PPM) file format"
+    },
+    {
+      "extension": "PPT",
+      "aliases": [
+        "PPS",
+        "POT"
+      ],
+      "name": "Microsoft PowerPoint Binary Deck",
+      "family": "presentation",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.ms-powerpoint"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "slide-deck-manifest",
+        "notes"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft PowerPoint Binary Deck (PPT) file format"
+    },
+    {
+      "extension": "PPTX",
+      "aliases": [
+        "PPTM",
+        "PPSX",
+        "POTX"
+      ],
+      "name": "Office Open XML Presentation",
+      "family": "presentation",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "slide-deck-manifest",
+        "notes"
+      ],
+      "viewer": "document-reader",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Office Open XML Presentation (PPTX) file format"
+    },
+    {
+      "extension": "PS",
+      "aliases": [
+        "PRN",
+        "CHM",
+        "HLP",
+        "MAN"
+      ],
+      "name": "Adobe PostScript Page Description",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/postscript"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Adobe PostScript Page Description (PS) file format"
+    },
+    {
+      "extension": "PS1",
+      "aliases": [
+        "PSM1",
+        "BAT",
+        "CMD"
+      ],
+      "name": "Windows PowerShell Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-powershell"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Windows PowerShell Script (PS1) file format"
+    },
+    {
+      "extension": "PSD",
+      "aliases": [
+        "PSB",
+        "PSDT"
+      ],
+      "name": "Adobe Photoshop Layered Document",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "image/vnd.adobe.photoshop"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "38425053",
+          "ascii": "8BPS"
+        }
+      ],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "metadata-xmp-editor",
+      "isLossless": true,
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Adobe layered raster/vector/adjustment document with embedded color profiles and smart objects."
+    },
+    {
+      "extension": "PUB",
+      "aliases": [],
+      "name": "Microsoft Publisher Layout",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-mspublisher"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft Publisher Layout (PUB) file format"
+    },
+    {
+      "extension": "PY",
+      "aliases": [
+        "PYW",
+        "PYI"
+      ],
+      "name": "Python Source Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-python"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Python Source Script (PY) file format"
+    },
+    {
+      "extension": "QCOW2",
+      "aliases": [
+        "QCOW"
+      ],
+      "name": "QEMU Copy-On-Write v2 Image",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-qemu-disk"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "QEMU Copy-On-Write v2 Image (QCOW2) file format"
+    },
+    {
+      "extension": "QOI",
+      "aliases": [],
+      "name": "Quite OK Image Format",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/qoi"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "716F6966",
+          "ascii": "qoif"
+        }
+      ],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Ultra-fast lossless RGB/RGBA image format with O(N) single-pass codec."
+    },
+    {
+      "extension": "QXP",
+      "aliases": [],
+      "name": "QuarkXPress Publishing Layout",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/vnd.quark.quarkxpress"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "download-only",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "QuarkXPress Publishing Layout (QXP) file format"
+    },
+    {
+      "extension": "R",
+      "aliases": [
+        "JL",
+        "DART",
+        "ZIG",
+        "NIM"
+      ],
+      "name": "R Statistical Computing Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-r-source"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "R Statistical Computing Script (R) file format"
+    },
+    {
+      "extension": "R3D",
+      "aliases": [],
+      "name": "RED Digital Cinema REDCODE RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "video/x-red-r3d"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "RED Digital Cinema REDCODE RAW (R3D) file format"
+    },
+    {
+      "extension": "RAF",
+      "aliases": [],
+      "name": "Fujifilm X-Trans / Bayer RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-fuji-raf"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "46554A4946494C4D",
+          "ascii": "FUJIFILM"
+        }
+      ],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Fujifilm RAF negative containing CFA header tables, embedded JPEG preview, and RAW CFA block."
+    },
+    {
+      "extension": "RAR",
+      "aliases": [
+        "REV"
+      ],
+      "name": "Roshal RAR5 Archive",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/vnd.rar"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "526172211A07",
+          "ascii": "Rar!.."
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Multi-volume archive container supporting recovery records and AES encryption."
+    },
+    {
+      "extension": "RAS",
+      "aliases": [
+        "SUN"
+      ],
+      "name": "Sun Raster Bitmap",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-cmu-raster"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Sun Raster Bitmap (RAS) file format"
+    },
+    {
+      "extension": "RB",
+      "aliases": [],
+      "name": "Ruby Script Source",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-ruby"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Ruby Script Source (RB) file format"
+    },
+    {
+      "extension": "RDB",
+      "aliases": [],
+      "name": "Redis Snapshot Persistence Dump",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-redis-rdb"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Redis Snapshot Persistence Dump (RDB) file format"
+    },
+    {
+      "extension": "REALM",
+      "aliases": [
+        "LMDB",
+        "LEVELDB"
+      ],
+      "name": "MongoDB Realm Mobile Database",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-realm"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "MongoDB Realm Mobile Database (REALM) file format"
+    },
+    {
+      "extension": "REG",
+      "aliases": [
+        "INF",
+        "DS_STORE"
+      ],
+      "name": "Windows Registry Import Script",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "code-viewer",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Windows Registry Import Script (REG) file format"
+    },
+    {
+      "extension": "REX",
+      "aliases": [
+        "RX2",
+        "VOC",
+        "8SVX"
+      ],
+      "name": "Propellerhead ReCycle Loop",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-rex"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Propellerhead ReCycle Loop (REX) file format"
+    },
+    {
+      "extension": "RM",
+      "aliases": [
+        "RMVB"
+      ],
+      "name": "RealMedia Streaming Video",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "application/vnd.rn-realmedia"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "RealMedia Streaming Video (RM) file format"
+    },
+    {
+      "extension": "RPM",
+      "aliases": [],
+      "name": "RedHat / Fedora Package Archive",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-rpm"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "RedHat / Fedora Package Archive (RPM) file format"
+    },
+    {
+      "extension": "RS",
+      "aliases": [],
+      "name": "Rust Systems Source Code",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-rust"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Rust Systems Source Code (RS) file format"
+    },
+    {
+      "extension": "RST",
+      "aliases": [],
+      "name": "reStructuredText Technical Prose",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-rst"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "markdown-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "reStructuredText Technical Prose (RST) file format"
+    },
+    {
+      "extension": "RTF",
+      "aliases": [],
+      "name": "Rich Text Format Interchange",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/rtf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Rich Text Format Interchange (RTF) file format"
+    },
+    {
+      "extension": "RW2",
+      "aliases": [
+        "RAW",
+        "RWL"
+      ],
+      "name": "Panasonic LUMIX RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-panasonic-rw2"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "49495500",
+          "ascii": "IIU."
+        }
+      ],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Panasonic & Leica D-Lux/V-Lux RAW sensor file."
+    },
+    {
+      "extension": "SAFETENSORS",
+      "aliases": [],
+      "name": "HuggingFace SafeTensors Model Weights",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-safetensors"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "json-tree-viewer",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Zero-copy memory-mapped tensor weights container with validated JSON header and no pickle execution."
+    },
+    {
+      "extension": "SAV",
+      "aliases": [
+        "RDS",
+        "RDA",
+        "RDATA"
+      ],
+      "name": "IBM SPSS Statistics Dataset",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-spss-sav"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "IBM SPSS Statistics Dataset (SAV) file format"
+    },
+    {
+      "extension": "SCALA",
+      "aliases": [],
+      "name": "Scala JVM / Functional Source",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-scala"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Scala JVM / Functional Source (SCALA) file format"
+    },
+    {
+      "extension": "SF2",
+      "aliases": [
+        "SFZ",
+        "DLS"
+      ],
+      "name": "SoundFont 2 Sample Bank",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-soundfont"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "SoundFont 2 Sample Bank (SF2) file format"
+    },
+    {
+      "extension": "SGI",
+      "aliases": [
+        "RGB",
+        "RGBA"
+      ],
+      "name": "Silicon Graphics Image",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/sgi"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Silicon Graphics Image (SGI) file format"
+    },
+    {
+      "extension": "SH",
+      "aliases": [
+        "BASH",
+        "ZSH",
+        "FISH"
+      ],
+      "name": "POSIX / Bash / Zsh Shell Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-sh"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "POSIX / Bash / Zsh Shell Script (SH) file format"
+    },
+    {
+      "extension": "SHP",
+      "aliases": [
+        "SHX",
+        "PRJ",
+        "GPKG"
+      ],
+      "name": "ESRI Shapefile Spatial Vector Geometry",
+      "family": "gis_mapping",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-shapefile"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "geo-bounds",
+        "coordinate-crs"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "ESRI Shapefile Spatial Vector Geometry (SHP) file format"
+    },
+    {
+      "extension": "SKETCH",
+      "aliases": [],
+      "name": "Sketch App Design Archive",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-sketch"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Sketch App Design Archive (SKETCH) file format"
+    },
+    {
+      "extension": "SKP",
+      "aliases": [],
+      "name": "Trimble SketchUp Model",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.sketchup.skp"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Trimble SketchUp Model (SKP) file format"
+    },
+    {
+      "extension": "SQL",
+      "aliases": [],
+      "name": "Structured Query Language Script",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "application/sql"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Structured Query Language Script (SQL) file format"
+    },
+    {
+      "extension": "SQLITE",
+      "aliases": [
+        "SQLITE3",
+        "DB",
+        "DB3",
+        "S3DB",
+        "SL3"
+      ],
+      "name": "SQLite 3 Relational Database",
+      "family": "database",
+      "category": "data",
+      "mimeTypes": [
+        "application/vnd.sqlite3",
+        "application/x-sqlite3"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "53514C69746520666F726D6174203300",
+          "ascii": "SQLite format 3"
+        }
+      ],
+      "metadataParsers": [
+        "sqlite-header",
+        "schema-tables"
+      ],
+      "viewer": "sqlite-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Library of Congress recommended single-file transactional SQL database with binary header metadata."
+    },
+    {
+      "extension": "SRT",
+      "aliases": [],
+      "name": "SubRip Video Subtitle Cues",
+      "family": "subtitle_lyric",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-subrip"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "cue-timestamps",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "SubRip Video Subtitle Cues (SRT) file format"
+    },
+    {
+      "extension": "SRW",
+      "aliases": [],
+      "name": "Samsung NX RAW Image",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-samsung-srw"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Samsung NX RAW Image (SRW) file format"
+    },
+    {
+      "extension": "STEP",
+      "aliases": [
+        "STP",
+        "STE"
+      ],
+      "name": "ISO 10303 CAD Exchange Model",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/step"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "ISO 10303 CAD Exchange Model (STEP) file format"
+    },
+    {
+      "extension": "STL",
+      "aliases": [],
+      "name": "Stereolithography 3D Print Mesh",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/stl"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Stereolithography 3D Print Mesh (STL) file format"
+    },
+    {
+      "extension": "SUB",
+      "aliases": [
+        "IDX",
+        "SBV",
+        "SMI"
+      ],
+      "name": "MicroDVD / VobSub Subtitle Track",
+      "family": "subtitle_lyric",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-microdvd"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "cue-timestamps",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "MicroDVD / VobSub Subtitle Track (SUB) file format"
+    },
+    {
+      "extension": "SVG",
+      "aliases": [
+        "SVGZ"
+      ],
+      "name": "Scalable Vector Graphics (XML)",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "image/svg+xml"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "3C737667",
+          "ascii": "<svg"
+        }
+      ],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "W3C XML resolution-independent 2D vector graphic standard inspectable as image or source."
+    },
+    {
+      "extension": "SWF",
+      "aliases": [
+        "FLA"
+      ],
+      "name": "Adobe Shockwave Flash Legacy",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-shockwave-flash"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Legacy",
+      "description": "Adobe Shockwave Flash Legacy (SWF) file format"
+    },
+    {
+      "extension": "SWIFT",
+      "aliases": [],
+      "name": "Apple Swift Source Module",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-swift"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Apple Swift Source Module (SWIFT) file format"
+    },
+    {
+      "extension": "TAR",
+      "aliases": [
+        "CPIO",
+        "AR",
+        "A"
+      ],
+      "name": "POSIX Tape Archive (ustar)",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-tar"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 257,
+          "hex": "7573746172",
+          "ascii": "ustar"
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Full",
+      "description": "POSIX uncompressed filesystem tape archive preserving permissions, ownership, and symlinks."
+    },
+    {
+      "extension": "TEX",
+      "aliases": [
+        "LATEX",
+        "BIB",
+        "STY",
+        "CLS"
+      ],
+      "name": "LaTeX Typesetting Source",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/x-tex"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "LaTeX Typesetting Source (TEX) file format"
+    },
+    {
+      "extension": "TGA",
+      "aliases": [
+        "TARGA",
+        "ICB",
+        "VDA"
+      ],
+      "name": "Truevision Targa Raster",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-targa",
+        "image/x-tga"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Truecolor 24/32-bit raster format common in game textures and video pipelines."
+    },
+    {
+      "extension": "TIFF",
+      "aliases": [
+        "TIF"
+      ],
+      "name": "Tagged Image File Format (Archival)",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/tiff"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "49492A00",
+          "ascii": "II*."
+        },
+        {
+          "offset": 0,
+          "hex": "4D4D002A",
+          "ascii": "MM.*"
+        }
+      ],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "ISO archival master image format supporting 16-bit integer/float depth, layers, and multi-page."
+    },
+    {
+      "extension": "TOML",
+      "aliases": [],
+      "name": "Tom's Obvious Minimal Language",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/toml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Tom's Obvious Minimal Language (TOML) file format"
+    },
+    {
+      "extension": "TORRENT",
+      "aliases": [],
+      "name": "BitTorrent Bencode Metainfo File",
+      "family": "system_other",
+      "category": "data",
+      "mimeTypes": [
+        "application/x-bittorrent"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "binary-header"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "BitTorrent Bencode Metainfo File (TORRENT) file format"
+    },
+    {
+      "extension": "TS",
+      "aliases": [
+        "CTS"
+      ],
+      "name": "TypeScript Source Module",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/typescript"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "TypeScript Source Module (TS) file format"
+    },
+    {
+      "extension": "TSX",
+      "aliases": [],
+      "name": "TypeScript React JSX Component",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/tsx"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "TypeScript React JSX Component (TSX) file format"
+    },
+    {
+      "extension": "TTA",
+      "aliases": [
+        "TAK"
+      ],
+      "name": "True Audio Lossless Codec",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-tta"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "True Audio Lossless Codec (TTA) file format"
+    },
+    {
+      "extension": "TTF",
+      "aliases": [
+        "TTC"
+      ],
+      "name": "TrueType / Collection Font",
+      "family": "font",
+      "category": "data",
+      "mimeTypes": [
+        "font/ttf"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "00010000"
+        }
+      ],
+      "metadataParsers": [
+        "sfnt-tables",
+        "glyph-metrics"
+      ],
+      "viewer": "font-specimen",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Apple/Microsoft quadratic Bezier SFNT digital font format."
+    },
+    {
+      "extension": "TTML",
+      "aliases": [
+        "DFXP"
+      ],
+      "name": "W3C Timed Text Markup Language",
+      "family": "subtitle_lyric",
+      "category": "document",
+      "mimeTypes": [
+        "application/ttml+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "cue-timestamps",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "W3C Timed Text Markup Language (TTML) file format"
+    },
+    {
+      "extension": "TXT",
+      "aliases": [
+        "TEXT",
+        "LOG",
+        "NFO",
+        "README"
+      ],
+      "name": "Plain Text Document",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "text/plain"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Universal UTF-8/ASCII unformatted character stream."
+    },
+    {
+      "extension": "USD",
+      "aliases": [
+        "USDA",
+        "USDC",
+        "USDZ"
+      ],
+      "name": "Pixar Universal Scene Description",
+      "family": "cad_3d",
+      "category": "data",
+      "mimeTypes": [
+        "model/vnd.usd"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "mesh-geometry",
+        "scene-graph"
+      ],
+      "viewer": "3d-preview",
+      "editor": "cad-3d-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Pixar Universal Scene Description (USD) file format"
+    },
+    {
+      "extension": "VCF",
+      "aliases": [
+        "VCARD"
+      ],
+      "name": "vCard Electronic Contact Card",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "text/vcard"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "vCard Electronic Contact Card (VCF) file format"
+    },
+    {
+      "extension": "VDI",
+      "aliases": [],
+      "name": "VirtualBox Disk Image",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-virtualbox-vdi"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "VirtualBox Disk Image (VDI) file format"
+    },
+    {
+      "extension": "VHD",
+      "aliases": [
+        "VHDX"
+      ],
+      "name": "Microsoft Virtual Hard Disk",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-vhd"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Microsoft Virtual Hard Disk (VHD) file format"
+    },
+    {
+      "extension": "VMDK",
+      "aliases": [
+        "OVA",
+        "OVF"
+      ],
+      "name": "VMware Virtual Machine Disk",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-vmdk"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "VMware Virtual Machine Disk (VMDK) file format"
+    },
+    {
+      "extension": "VOB",
+      "aliases": [
+        "IFO"
+      ],
+      "name": "DVD-Video Object Stream",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/dvd"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "DVD-Video Object Stream (VOB) file format"
+    },
+    {
+      "extension": "VSDX",
+      "aliases": [
+        "VSD"
+      ],
+      "name": "Microsoft Visio Vector Diagram",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "application/vnd.visio"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "download-only",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Microsoft Visio Vector Diagram (VSDX) file format"
+    },
+    {
+      "extension": "VTF",
+      "aliases": [],
+      "name": "Valve Texture Format",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-vtf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Valve Texture Format (VTF) file format"
+    },
+    {
+      "extension": "VTT",
+      "aliases": [],
+      "name": "W3C WebVTT Captions & Chapters",
+      "family": "subtitle_lyric",
+      "category": "document",
+      "mimeTypes": [
+        "text/vtt"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "cue-timestamps",
+        "text-encoding"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "W3C WebVTT Captions & Chapters (VTT) file format"
+    },
+    {
+      "extension": "VUE",
+      "aliases": [
+        "SVELTE",
+        "ASTRO"
+      ],
+      "name": "Vue Single-File Component",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/x-vue"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Vue Single-File Component (VUE) file format"
+    },
+    {
+      "extension": "WASM",
+      "aliases": [],
+      "name": "WebAssembly Binary Module",
+      "family": "executable_package",
+      "category": "archive",
+      "mimeTypes": [
+        "application/wasm"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "0061736D",
+          "ascii": ".asm"
+        }
+      ],
+      "metadataParsers": [
+        "binary-header",
+        "package-manifest"
+      ],
+      "viewer": "hex-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Full",
+      "description": "W3C portable binary instruction format for browser and server execution."
+    },
+    {
+      "extension": "WAT",
+      "aliases": [],
+      "name": "WebAssembly Text Format",
+      "family": "source_code",
+      "category": "document",
+      "mimeTypes": [
+        "text/wat"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "line-count",
+        "utf8-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Human-readable S-expression text representation of WebAssembly modules."
+    },
+    {
+      "extension": "WAV",
+      "aliases": [
+        "WAVE",
+        "BWF",
+        "RF64"
+      ],
+      "name": "Waveform Audio File Format (RIFF/BWF)",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/wav",
+        "audio/x-wav"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "52494646",
+          "ascii": "RIFF"
+        },
+        {
+          "offset": 8,
+          "hex": "57415645",
+          "ascii": "WAVE"
+        }
+      ],
+      "containerFormat": "RIFF",
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Uncompressed Broadcast/PCM RIFF master audio format carrying sample rate, channel count, and bit depth."
+    },
+    {
+      "extension": "WBMP",
+      "aliases": [],
+      "name": "Wireless Application Bitmap",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/vnd.wap.wbmp"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Wireless Application Bitmap (WBMP) file format"
+    },
+    {
+      "extension": "WEBA",
+      "aliases": [],
+      "name": "WebM Audio-Only Track",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/webm"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "WebM Audio-Only Track (WEBA) file format"
+    },
+    {
+      "extension": "WEBM",
+      "aliases": [],
+      "name": "WebM Open Web Video",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/webm"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "1A45DFA3",
+          "ascii": ".Eß£"
+        }
+      ],
+      "containerFormat": "EBML",
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Royalty-free Matroska profile dedicated to VP8/VP9/AV1 video and Vorbis/Opus audio."
+    },
+    {
+      "extension": "WEBP",
+      "aliases": [
+        "WBP"
+      ],
+      "name": "Google WebP Image",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/webp"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "52494646",
+          "ascii": "RIFF"
+        },
+        {
+          "offset": 8,
+          "hex": "57454250",
+          "ascii": "WEBP"
+        }
+      ],
+      "containerFormat": "RIFF",
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isLossless": false,
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Modern VP8/VP8L RIFF-wrapped web raster format supporting lossy, lossless, alpha, and animation."
+    },
+    {
+      "extension": "WIM",
+      "aliases": [
+        "ESD",
+        "SWM"
+      ],
+      "name": "Windows Imaging Archive",
+      "family": "disk_image",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-ms-wim"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "partition-header",
+        "volume-table"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Windows Imaging Archive (WIM) file format"
+    },
+    {
+      "extension": "WMA",
+      "aliases": [],
+      "name": "Windows Media Audio",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-ms-wma"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Windows Media Audio (WMA) file format"
+    },
+    {
+      "extension": "WMF",
+      "aliases": [],
+      "name": "Windows Metafile Vector",
+      "family": "vector_graphic",
+      "category": "image",
+      "mimeTypes": [
+        "image/wmf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "xml-dom",
+        "svg-viewbox"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Windows Metafile Vector (WMF) file format"
+    },
+    {
+      "extension": "WMV",
+      "aliases": [
+        "ASF"
+      ],
+      "name": "Windows Media Video (ASF)",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-ms-wmv"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Windows Media Video (ASF) (WMV) file format"
+    },
+    {
+      "extension": "WOFF",
+      "aliases": [],
+      "name": "W3C Web Open Font Format 1",
+      "family": "font",
+      "category": "data",
+      "mimeTypes": [
+        "font/woff"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "774F4646",
+          "ascii": "wOFF"
+        }
+      ],
+      "metadataParsers": [
+        "sfnt-tables",
+        "glyph-metrics"
+      ],
+      "viewer": "font-specimen",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Zlib-compressed W3C web font format wrapping SFNT tables."
+    },
+    {
+      "extension": "WOFF2",
+      "aliases": [],
+      "name": "W3C Web Open Font Format 2",
+      "family": "font",
+      "category": "data",
+      "mimeTypes": [
+        "font/woff2"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "774F4632",
+          "ascii": "wOF2"
+        }
+      ],
+      "metadataParsers": [
+        "sfnt-tables",
+        "glyph-metrics"
+      ],
+      "viewer": "font-specimen",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Brotli-compressed W3C web font container for OpenType/TrueType glyphs."
+    },
+    {
+      "extension": "WPD",
+      "aliases": [
+        "WPS"
+      ],
+      "name": "Corel WordPerfect Document",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.wordperfect"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "document-reader",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Corel WordPerfect Document (WPD) file format"
+    },
+    {
+      "extension": "WTV",
+      "aliases": [
+        "DVRMS"
+      ],
+      "name": "Windows Recorded TV Show",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-ms-wtv"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Windows Recorded TV Show (WTV) file format"
+    },
+    {
+      "extension": "WV",
+      "aliases": [],
+      "name": "WavPack Hybrid Lossless Audio",
+      "family": "audio",
+      "category": "audio",
+      "mimeTypes": [
+        "audio/x-wavpack"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "audio-header",
+        "id3-vorbis-tags",
+        "lrc-lyrics"
+      ],
+      "viewer": "audio-player",
+      "editor": "audio-dsp-tagger",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "WavPack Hybrid Lossless Audio (WV) file format"
+    },
+    {
+      "extension": "X3F",
+      "aliases": [],
+      "name": "Sigma Foveon X3F RAW",
+      "family": "camera_raw",
+      "category": "raw",
+      "mimeTypes": [
+        "image/x-sigma-x3f"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "464F5662",
+          "ascii": "FOVb"
+        }
+      ],
+      "metadataParsers": [
+        "raw-demosaic",
+        "exif",
+        "embedded-jpeg",
+        "xmp"
+      ],
+      "viewer": "raw-demosaic-viewer",
+      "editor": "raw-developer",
+      "isLossless": true,
+      "isStreamable": true,
+      "preservationGrade": "Proprietary",
+      "description": "Sigma multi-layer Foveon X3 sensor RAW file."
+    },
+    {
+      "extension": "XBM",
+      "aliases": [],
+      "name": "X11 Bitmap C Header",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-xbitmap"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "X11 Bitmap C Header (XBM) file format"
+    },
+    {
+      "extension": "XCF",
+      "aliases": [],
+      "name": "GIMP Experimental Computing Facility",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "image/x-xcf"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "GIMP Experimental Computing Facility (XCF) file format"
+    },
+    {
+      "extension": "XD",
+      "aliases": [],
+      "name": "Adobe XD Prototype Document",
+      "family": "design_layout",
+      "category": "archive",
+      "mimeTypes": [
+        "application/vnd.adobe.xd"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "layer-manifest",
+        "xmp",
+        "icc-profile"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": false,
+      "preservationGrade": "Proprietary",
+      "description": "Adobe XD Prototype Document (XD) file format"
+    },
+    {
+      "extension": "XLS",
+      "aliases": [
+        "XLT"
+      ],
+      "name": "Microsoft Excel Binary BIFF Workbook",
+      "family": "spreadsheet",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.ms-excel"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "tabular-columns",
+        "sheet-names"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "csv-table-editor",
+      "isStreamable": true,
+      "preservationGrade": "Legacy",
+      "description": "Microsoft Excel Binary BIFF Workbook (XLS) file format"
+    },
+    {
+      "extension": "XLSX",
+      "aliases": [
+        "XLSM",
+        "XLSB",
+        "XLTX"
+      ],
+      "name": "Office Open XML Spreadsheet",
+      "family": "spreadsheet",
+      "category": "document",
+      "mimeTypes": [
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "504B0304",
+          "ascii": "PK.."
+        }
+      ],
+      "containerFormat": "OPC / ZIP",
+      "metadataParsers": [
+        "tabular-columns",
+        "sheet-names"
+      ],
+      "viewer": "spreadsheet-grid",
+      "editor": "none",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "ECMA-376 OpenXML workbook supporting multiple worksheets, formulas, and tables."
+    },
+    {
+      "extension": "XML",
+      "aliases": [
+        "XSD",
+        "XSLT",
+        "DTD",
+        "PLIST",
+        "RSS",
+        "ATOM"
+      ],
+      "name": "Extensible Markup Language (W3C)",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/xml",
+        "text/xml"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "3C3F786D6C",
+          "ascii": "<?xml"
+        }
+      ],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "Structured schema-validated hierarchical markup format."
+    },
+    {
+      "extension": "XMP",
+      "aliases": [
+        "EXIF",
+        "LRTEMPLATE",
+        "AAE",
+        "THM",
+        "ACV"
+      ],
+      "name": "Adobe Extensible Metadata Platform Sidecar",
+      "family": "color_lut_sidecar",
+      "category": "data",
+      "mimeTypes": [
+        "application/rdf+xml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "lut-grid",
+        "xmp-tags"
+      ],
+      "viewer": "code-viewer",
+      "editor": "metadata-xmp-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Full",
+      "description": "ISO 16684 RDF/XML non-destructive curation, ratings, crop, and color-edit sidecar file."
+    },
+    {
+      "extension": "XPM",
+      "aliases": [],
+      "name": "X11 Pixmap Text Image",
+      "family": "raster_image",
+      "category": "image",
+      "mimeTypes": [
+        "image/x-xpixmap"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "image-dimensions",
+        "exif",
+        "icc-profile"
+      ],
+      "viewer": "image-lightbox",
+      "editor": "pixel-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "X11 Pixmap Text Image (XPM) file format"
+    },
+    {
+      "extension": "XPS",
+      "aliases": [
+        "OXPS"
+      ],
+      "name": "Open XML Paper Specification",
+      "family": "document",
+      "category": "document",
+      "mimeTypes": [
+        "application/oxps"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "text-encoding",
+        "document-structure"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Open XML Paper Specification (XPS) file format"
+    },
+    {
+      "extension": "XZ",
+      "aliases": [
+        "TXZ",
+        "TAR.XZ",
+        "LZMA"
+      ],
+      "name": "XZ / LZMA2 Compressed Tarball",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/x-xz"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "FD377A585A00",
+          "ascii": "ý7zXZ."
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "High-compression LZMA2 container for Linux distribution tarballs and firmware."
+    },
+    {
+      "extension": "Y4M",
+      "aliases": [
+        "YUV"
+      ],
+      "name": "YUV4MPEG2 Raw Frame Sequence",
+      "family": "video",
+      "category": "video",
+      "mimeTypes": [
+        "video/x-yuv4mpeg"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "container-atoms",
+        "video-stream",
+        "audio-stream"
+      ],
+      "viewer": "video-player",
+      "editor": "video-trimmer",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "YUV4MPEG2 Raw Frame Sequence (Y4M) file format"
+    },
+    {
+      "extension": "YAML",
+      "aliases": [
+        "YML"
+      ],
+      "name": "YAML Ain’t Markup Language",
+      "family": "structured_data",
+      "category": "data",
+      "mimeTypes": [
+        "application/yaml"
+      ],
+      "magicSignatures": [],
+      "metadataParsers": [
+        "schema-keys",
+        "text-encoding"
+      ],
+      "viewer": "code-viewer",
+      "editor": "text-code-editor",
+      "isStreamable": true,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "YAML Ain’t Markup Language (YAML) file format"
+    },
+    {
+      "extension": "ZIP",
+      "aliases": [
+        "ZIPX",
+        "WAR",
+        "EAR",
+        "XPI",
+        "CRX"
+      ],
+      "name": "ZIP Archive (PKWARE)",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/zip"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "504B0304",
+          "ascii": "PK.."
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Full",
+      "description": "Universal deflate-compressed multi-file archive with central directory index."
+    },
+    {
+      "extension": "ZST",
+      "aliases": [
+        "ZSTD",
+        "TZST",
+        "TAR.ZST"
+      ],
+      "name": "Zstandard Fast Compressed Archive",
+      "family": "archive_compressed",
+      "category": "archive",
+      "mimeTypes": [
+        "application/zstd"
+      ],
+      "magicSignatures": [
+        {
+          "offset": 0,
+          "hex": "28B52FFD",
+          "ascii": "(µ/ý"
+        }
+      ],
+      "metadataParsers": [
+        "central-directory",
+        "compression-header"
+      ],
+      "viewer": "archive-inspector",
+      "editor": "none",
+      "isStreamable": false,
+      "preservationGrade": "LOC-Acceptable",
+      "description": "Facebook RFC 8878 high-throughput real-time lossless compression stream."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "projectId": "drive-therapy-local",
+  "appId": "1:000000000000:web:0000000000000000000000",
+  "apiKey": "YOUR_FIREBASE_WEB_API_KEY",
+  "authDomain": "drive-therapy-local.firebaseapp.com",
+  "storageBucket": "drive-therapy-local.firebasestorage.app",
+  "messagingSenderId": "000000000000",
+  "measurementId": "",
+  "oAuthClientId": "",
+  "recaptchaSiteKey": ""
+}

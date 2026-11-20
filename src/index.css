@@ -1,0 +1,1350 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-gemini-indigo: #403993;
+    --color-gemini-blue: #1074B1;
+    --color-gemini-teal: #52B197;
+    --color-gemini-citron: #BEBF61;
+    --color-gemini-magenta: #A61B7A;
+
+    /* Theme Engine Dynamic Defaults */
+    --theme-bg: #F4F7FB;
+    --theme-surface: rgba(255, 255, 255, 0.85);
+    --theme-border: rgba(226, 232, 240, 0.8);
+    --theme-accent: #1074B1;
+  }
+
+  body {
+    background-color: var(--theme-bg, #F4F7FB);
+    color: var(--theme-text, #1E293B);
+    font-family: 'Noto Sans', 'Noto Sans Arabic', 'Noto Sans Devanagari', 'Noto Sans Bengali', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans KR', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body.theme-has-wallpaper {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+
+  body:not(.theme-has-wallpaper) {
+    background-color: var(--theme-bg, #F4F7FB) !important;
+    background: var(--theme-bg, #F4F7FB) !important;
+  }
+
+  #root {
+    background-color: transparent !important;
+    background: transparent !important;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  }
+
+  code, pre, .font-mono, .tabular-nums {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Universal Access Protocol (WCAG AAA) Strict Focus */
+  *:focus-visible {
+    outline: 2px solid var(--theme-accent);
+    outline-offset: 2px;
+  }
+}
+
+/* Screen Reader Skip Link (Invisible until focused) */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 1rem;
+  z-index: 99999;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--theme-accent, #1074B1);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: top 0.15s ease-in;
+}
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid #FFD700;
+}
+
+/* Dyslexia-Friendly Typography (Lexend / OpenDyslexic / Humanist Sans) */
+body.dyslexia-font {
+  font-family: 'Lexend', 'OpenDyslexic', 'Comic Sans MS', sans-serif !important;
+  letter-spacing: 0.03em;
+  word-spacing: 0.05em;
+  line-height: 1.7;
+}
+body.dyslexia-font h1,
+body.dyslexia-font h2,
+body.dyslexia-font h3,
+body.dyslexia-font h4,
+body.dyslexia-font h5,
+body.dyslexia-font h6 {
+  font-family: 'Lexend', 'OpenDyslexic', sans-serif !important;
+  letter-spacing: 0.02em;
+}
+
+/* Accessible Text Scaling */
+body.font-scale-large {
+  font-size: 115%;
+}
+body.font-scale-xlarge {
+  font-size: 130%;
+}
+
+/* Calm / Reduced Motion Mode (Autism Spectrum & Vestibular Ease) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body.calm-motion,
+body.calm-motion *,
+body.calm-motion *::before,
+body.calm-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Accessible Touch Target Envelope (WCAG 2.2 Target Size) */
+.touch-target-44 {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* RTL Layout Enhancements */
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* Responsive & Adaptive Vertical Typography Mode for CJK scripts (zh, ja, ko) */
+:lang(zh), :lang(ja), :lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans CJK SC", "Noto Sans CJK TC", "PingFang SC", "Hiragino Sans", "Meiryo", "Malgun Gothic", sans-serif;
+}
+
+.vertical-text-mode .vertical-flow,
+.vertical-text-mode .cjk-text-adaptive {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+  max-height: 100%;
+}
+
+/* Mixed orientation for latin text & digits embedded in vertical CJK */
+.vertical-text-mode .vertical-flow .mixed-script,
+.vertical-text-mode .cjk-text-adaptive .mixed-script {
+  text-orientation: mixed;
+}
+
+/* Container adaptation for vertical reading stream without distorting parent layouts */
+.vertical-text-mode .vertical-reading-stream {
+  display: flex;
+  flex-direction: row-reverse;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 520px;
+  padding: 0.75rem;
+  scrollbar-width: thin;
+}
+
+/* Keep action buttons, donuts, and controls properly horizontal and responsive */
+.vertical-text-mode button,
+.vertical-text-mode svg,
+.vertical-text-mode .stat-donuts,
+.vertical-text-mode input,
+.vertical-text-mode [role="dialog"],
+.vertical-text-mode .dock-container {
+  writing-mode: horizontal-tb;
+}
+
+/* Universal Theme-Aware Custom Scrollbars (Firefox & WebKit/Blink Parity) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-border, rgba(148, 163, 184, 0.4)) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme-border, rgba(148, 163, 184, 0.4));
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-accent, #1074B1);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Wallpaper Themes Support & Isolated Z-Depth Stacking Context */
+#root {
+  position: relative;
+  z-index: 10;
+}
+
+.theme-has-wallpaper body,
+.theme-has-wallpaper #root {
+  background: transparent !important;
+}
+
+#dt-theme-stage {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#dt-theme-wallpaper {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+#dt-theme-header-banner,
+#dt-theme-footer-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Frosted Glass UI panels over wallpaper */
+.theme-has-wallpaper .frosted-surface {
+  background-color: var(--theme-surface, rgba(255, 255, 255, 0.88)) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ==========================================================================
+   [WO-102] OPTICAL TEXT HINTING (3 Cinema-Grade Modes — Zero Color Inversion)
+   ========================================================================== */
+
+/* Mode 1: Optical Scrim (Default — soft frosted pill + subtle inner hairline) */
+.text-hinting-inset [data-text-hint="true"],
+.text-hinting-inset .text-hint-target {
+  background-color: rgba(var(--theme-surface-rgb, 255, 255, 255), 0.72);
+  backdrop-filter: blur(10px) saturate(1.25);
+  -webkit-backdrop-filter: blur(10px) saturate(1.25);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14), inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+.text-hinting-inset .text-hint-inline {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.65);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.dark .text-hinting-inset .text-hint-inline {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.78), 0 0 8px rgba(0, 0, 0, 0.42);
+}
+
+/* Mode 2: Soft Optical Halo (Multi-layer sub-pixel Gaussian legibility halo) */
+.text-hinting-outline [data-text-hint="true"],
+.text-hinting-outline .text-hint-target,
+.text-hinting-outline .text-hint-inline {
+  -webkit-text-stroke: 0;
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.92),
+    0 0 6px rgba(255, 255, 255, 0.85),
+    0 0 12px rgba(255, 255, 255, 0.55);
+  -webkit-font-smoothing: antialiased;
+}
+.dark .text-hinting-outline [data-text-hint="true"],
+.dark .text-hinting-outline .text-hint-target,
+.dark .text-hinting-outline .text-hint-inline {
+  -webkit-text-stroke: 0;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.94),
+    0 0 6px rgba(0, 0, 0, 0.85),
+    0 0 14px rgba(0, 0, 0, 0.65);
+}
+
+/* Mode 3: Crisp Native (Zero overlay, pure subpixel antialiasing) */
+.text-hinting-none [data-text-hint="true"],
+.text-hinting-none .text-hint-target,
+.text-hinting-none .text-hint-inline {
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Area-Specific Opacity & Blur Classes */
+/* Sidebar Container: 100% Visible Background, No Frost */
+.sidebar-container {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-right-color: var(--theme-border, rgba(226, 232, 240, 0.4)) !important;
+}
+.dark .sidebar-container {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-right-color: var(--theme-border, rgba(255, 255, 255, 0.15)) !important;
+}
+
+.sidebar-scroll-area {
+  flex: 1 1 0%;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-border, rgba(148, 163, 184, 0.55)) transparent;
+}
+.sidebar-scroll-area::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-scroll-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scroll-area::-webkit-scrollbar-thumb {
+  background-color: var(--theme-border, rgba(148, 163, 184, 0.55));
+  border-radius: 9999px;
+}
+
+/* Opaque Inner Sidebar Interactive Controls & Cards (Crisp Readability over Wallpaper) */
+.sidebar-container .sidebar-control-panel,
+.sidebar-container .sidebar-opaque-card,
+.sidebar-container .sidebar-mode-switch {
+  background-color: var(--theme-surface);
+  border-color: var(--theme-border);
+  color: var(--theme-text);
+}
+.sidebar-container button:not([data-active="true"]):not(.btn-active):not([aria-current="page"]):not([aria-selected="true"]):not(.btn-ghost):not(.p-1) {
+  background-color: var(--theme-surface);
+  border-color: var(--theme-border);
+  color: var(--theme-text);
+  transition: all 0.18s ease-in-out;
+}
+.sidebar-container button:not([data-active="true"]):hover {
+  filter: brightness(1.15) contrast(1.05);
+  border-color: var(--theme-accent, #1074B1) !important;
+}
+.sidebar-container .sidebar-opaque-card h1,
+.sidebar-container .sidebar-opaque-card h2,
+.sidebar-container .sidebar-opaque-card h3,
+.sidebar-container .sidebar-opaque-card p {
+  color: var(--theme-text);
+}
+.dark .sidebar-container .sidebar-control-panel,
+.dark .sidebar-container .sidebar-opaque-card,
+.dark .sidebar-container .sidebar-mode-switch {
+  background-color: var(--theme-surface);
+  border-color: var(--theme-border);
+  color: var(--theme-text);
+}
+
+/* Segmented Tab Switcher (Google Drive vs Local Storage) */
+.segmented-switcher-container {
+  background-color: var(--theme-surface);
+  border: 1px solid var(--theme-border);
+}
+.segmented-tab-btn {
+  color: var(--theme-text);
+  opacity: 0.82;
+  transition: all 0.18s ease-in-out;
+}
+.segmented-tab-btn:hover:not([data-active="true"]) {
+  opacity: 1;
+  background-color: rgba(var(--theme-surface-rgb), 0.65);
+  color: var(--theme-text);
+  filter: brightness(1.12);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.segmented-tab-btn[data-active="true"] {
+  background-color: var(--theme-accent, #1074B1) !important;
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 12px var(--theme-accent, #1074B1), 0 2px 6px rgba(0, 0, 0, 0.28) !important;
+}
+.segmented-tab-btn[data-active="true"] * {
+  color: #FFFFFF !important;
+}
+
+/* Main Workspace Canvas Container: Opacity & Blur when wallpaper is present */
+body.theme-has-wallpaper .main-stage-container {
+  background-color: rgba(var(--theme-surface-rgb, 248, 250, 252), var(--theme-main-opacity, 0.42)) !important;
+  backdrop-filter: blur(var(--theme-main-blur, 10px)) !important;
+  -webkit-backdrop-filter: blur(var(--theme-main-blur, 10px)) !important;
+}
+
+/* Classic Tiled & Composited Themes: 100% unblurred stage so pixel/sprite artwork is crystal clear */
+body.theme-has-wallpaper.theme-classic-composite .main-stage-container {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* When theme is SOLID (no wallpaper): canvas is 100% transparent so pure background color fills the entire stage */
+body:not(.theme-has-wallpaper) .main-stage-container {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Dock, Header & Footer Containers: Transparent outer structural bars so backgrounds extend continuously from top to bottom */
+.dock-container {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-right-color: var(--theme-border, rgba(226, 232, 240, 0.45)) !important;
+  color: var(--theme-text, inherit) !important;
+}
+
+.omnibox-header-container {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom-color: var(--theme-border, rgba(226, 232, 240, 0.45)) !important;
+  color: var(--theme-text, inherit) !important;
+}
+
+.secondary-header-container {
+  border-bottom-color: var(--theme-border, rgba(226, 232, 240, 0.45)) !important;
+  color: var(--theme-text, inherit) !important;
+}
+
+.unified-footer-container {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-top-color: var(--theme-border, rgba(226, 232, 240, 0.45)) !important;
+  color: var(--theme-text, inherit) !important;
+}
+
+/* Inner interactive controls inside Header, Footer, and Dock: Default inactive ("off") state */
+.omnibox-header-container button:not([data-active="true"]):not(.btn-active):not([aria-current="page"]):not([aria-pressed="true"]),
+.unified-footer-container button:not([data-active="true"]):not(.btn-active):not([aria-current="page"]):not([aria-pressed="true"]),
+.dock-container button:not([data-active="true"]):not(.btn-active):not([aria-current="page"]):not([aria-pressed="true"]) {
+  background-color: var(--theme-surface);
+  border: 1px solid var(--theme-border);
+  color: var(--theme-text);
+  opacity: 0.90;
+  transition: all 0.18s ease-in-out;
+}
+
+/* Hover state: distinct elevation, brightness enhancement, and border highlight */
+.omnibox-header-container button:not([data-active="true"]):hover,
+.unified-footer-container button:not([data-active="true"]):hover,
+.dock-container button:not([data-active="true"]):hover {
+  opacity: 1;
+  filter: brightness(1.18) contrast(1.08);
+  border-color: var(--theme-accent, #1074B1) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Active / Selected ("on") state: radiant accent background, crisp white text, and glowing active elevation */
+.omnibox-header-container button[data-active="true"],
+.omnibox-header-container button.btn-active,
+.omnibox-header-container button[aria-current="page"],
+.unified-footer-container button[data-active="true"],
+.unified-footer-container button.btn-active,
+.unified-footer-container button[aria-current="page"],
+.dock-container button[data-active="true"],
+.dock-container button.dock-item-active,
+.dock-container button[aria-current="page"] {
+  background-color: var(--theme-accent, #1074B1) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 14px var(--theme-accent, #1074B1), 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Focus-visible: accessible high-contrast focus rings */
+.omnibox-header-container button:focus-visible,
+.unified-footer-container button:focus-visible,
+.dock-container button:focus-visible {
+  outline: 2px solid var(--theme-accent, #1074B1) !important;
+  outline-offset: 2px !important;
+}
+
+/* Terminal Blinking Cursor Keyframe */
+@keyframes terminalCursorBlink {
+  0%, 49% { opacity: 1; filter: drop-shadow(0 0 8px #00FF66); }
+  50%, 100% { opacity: 0.85; filter: drop-shadow(0 0 2px #00FF66); }
+}
+.theme-terminal #dt-theme-wallpaper {
+  animation: terminalCursorBlink 1.5s infinite steps(2);
+}
+
+/* Vertical Height Adaptive Rules for Compact Laptops & Displays (< 740px height) */
+@media (max-height: 740px) {
+  .dock-container {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+  }
+  .dock-container.dock-collapsed .dock-nav-item,
+  .dock-container:not(.dock-expanded) .dock-nav-item {
+    min-height: 35px !important;
+    height: 35px !important;
+    width: 35px !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+  }
+  .dock-container.dock-expanded .dock-nav-item {
+    min-height: 35px !important;
+    height: 35px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+    justify-content: flex-start !important;
+  }
+  .dock-container .dock-nav-item svg {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  .dock-container .dock-bottom-controls {
+    gap: 2px !important;
+    padding-top: 2px !important;
+  }
+  .dock-container.dock-collapsed .dock-bottom-controls button,
+  .dock-container:not(.dock-expanded) .dock-bottom-controls button {
+    min-height: 30px !important;
+    height: 30px !important;
+    width: 30px !important;
+  }
+  .dock-container.dock-expanded .dock-bottom-controls button {
+    min-height: 30px !important;
+    height: 30px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .dock-container .dock-bottom-controls svg {
+    width: 0.9rem !important;
+    height: 0.9rem !important;
+  }
+  .sidebar-container {
+    padding: 0.5rem !important;
+  }
+  .sidebar-container .space-y-3 {
+    margin-top: 0.25rem !important;
+  }
+}
+
+/* Explicit text label display guarantee for expanded navigation dock */
+.dock-expanded .dock-nav-item {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.dock-expanded .dock-nav-label {
+  display: inline-block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: inherit !important;
+  padding-left: 0.25rem !important;
+}
+
+/* TV & 10-foot UI Mode / Ultrawide & 4K Spatial Focus Navigation */
+@media (min-width: 1921px) {
+  .main-stage-container {
+    max-width: 2560px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  button:focus-visible,
+  [role="button"]:focus-visible,
+  input:focus-visible {
+    outline-width: 3px !important;
+    outline-offset: 3px !important;
+  }
+}
+
+/* Responsive & Adaptive Scaling for Multi-Layer Classic Banners on Mobile Handhelds */
+@media (max-width: 640px) {
+  #dt-theme-header-banner {
+    max-height: 25vh !important;
+  }
+}
+
+@media (min-width: 1921px) {
+  /* Ensure fullscreen wallpapers cover ultrawide & 4K displays without letterboxing */
+  body:not(.theme-classic-composite) #dt-theme-wallpaper {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
+
+/* Universal Cards & Containers Theme Binding */
+.theme-card,
+.metric-card:not([data-active="true"]),
+.quick-access-card:not([data-active="true"]),
+.file-card:not([data-active="true"]),
+.folder-card:not([data-active="true"]),
+.sidebar-opaque-card,
+.modal-card,
+.drawer-card,
+[role="dialog"] > div {
+  background-color: var(--theme-surface);
+  border-color: var(--theme-border);
+  color: var(--theme-text-auto, var(--theme-text));
+}
+
+.theme-card h1, .theme-card h2, .theme-card h3, .theme-card h4,
+.modal-card h1, .modal-card h2, .modal-card h3,
+.drawer-card h1, .drawer-card h2, .drawer-card h3,
+.metric-card h3,
+.file-card h3, .file-card h4,
+.folder-card h3, .folder-card h4 {
+  color: var(--theme-text-auto, var(--theme-text));
+}
+
+/* Semantic Card Typography & High-Contrast Labels (WCAG AAA Surface Auto-Contrast) */
+.ui-card-title {
+  color: var(--theme-text-auto, var(--theme-text)) !important;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.ui-card-meta {
+  color: var(--theme-text-subtle-auto, var(--theme-text)) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.wcag-touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Container-Aware Auto-Fill Grids (Immune to Open Sidebars / Drawers Cramping Columns) */
+.drive-folders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.drive-files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 0.875rem;
+}
+
+.ribbon-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+/* Quick Access Cards State & Hover */
+.quick-access-card {
+  transition: all 0.18s ease-in-out;
+}
+.quick-access-card:hover:not([data-active="true"]) {
+  border-color: var(--theme-accent, #1074B1) !important;
+  filter: brightness(1.10) contrast(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
+}
+.quick-access-card[data-active="true"] {
+  border-color: var(--theme-accent, #1074B1) !important;
+  box-shadow: 0 0 12px var(--theme-accent, #1074B1), 0 2px 6px rgba(0, 0, 0, 0.22) !important;
+}
+
+/* Storage Metric Cards Active & Hover */
+.metric-card {
+  transition: all 0.2s ease-in-out;
+}
+.metric-card:hover {
+  filter: brightness(1.08) contrast(1.04);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
+}
+.metric-card[data-active="true"] {
+  border-color: var(--theme-accent, #1074B1) !important;
+  box-shadow: 0 0 14px var(--theme-accent, #1074B1), 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Specific Theme Aesthetics */
+.theme-terminal {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace !important;
+}
+.theme-terminal #dt-theme-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 102, 0.03) 0px,
+    rgba(0, 255, 102, 0.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  z-index: 2;
+}
+.theme-terminal [data-terminal-accent="true"] {
+  color: #00FF66 !important;
+  text-shadow: 0 0 6px rgba(0, 255, 102, 0.6);
+}
+
+/* ==========================================================================
+   TITAN AUGER CLASS COMPREHENSIVE UI THEME SUITE
+   Full UI transformation across header, omnibox, cards, buttons, footer, and sidebar
+   ========================================================================== */
+[data-titan-theme],
+.titan-theme-active {
+  --titan-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+[data-titan-theme] h1,
+[data-titan-theme] h2,
+[data-titan-theme] h3,
+[data-titan-theme] .sidebar-container h2,
+[data-titan-theme] .sidebar-container h3,
+[data-titan-theme] .font-mono {
+  font-family: var(--titan-font-mono) !important;
+  letter-spacing: 0.06em !important;
+}
+
+[data-titan-theme] .sidebar-opaque-card,
+[data-titan-theme] .metric-card,
+[data-titan-theme] .omnibox-container,
+[data-titan-theme] .quick-access-card,
+[data-titan-theme] .unified-footer,
+[data-titan-theme] .file-card,
+[data-titan-theme] .modal-card {
+  border: 1px solid var(--theme-border) !important;
+  box-shadow: 0 0 10px rgba(var(--theme-surface-rgb), 0.45), inset 0 0 14px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-titan-theme] .sidebar-container .sidebar-opaque-card,
+[data-titan-theme] .sidebar-container .sidebar-control-panel,
+[data-titan-theme] .sidebar-container .sidebar-mode-switch {
+  background-color: var(--theme-surface) !important;
+  border: 1px solid var(--theme-border) !important;
+  color: var(--theme-text) !important;
+}
+
+[data-titan-theme] button:not(.btn-ghost):hover {
+  border-color: var(--theme-accent) !important;
+  box-shadow: 0 0 10px var(--theme-accent) !important;
+}
+
+[data-titan-theme] input,
+[data-titan-theme] .omnibox-input {
+  font-family: var(--titan-font-mono) !important;
+  color: var(--theme-text) !important;
+  border-color: var(--theme-border) !important;
+}
+
+/* Smart Text Contrast Auto Utilities */
+.text-contrast-auto {
+  color: var(--theme-text-auto, inherit) !important;
+}
+.text-subtle-auto {
+  color: var(--theme-text-subtle-auto, inherit) !important;
+}
+
+/* Custom High-Contrast Tooltips */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 5px 9px;
+  background-color: #0F172A;
+  color: #F8FAFC;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+  z-index: 99999;
+}
+
+[data-tooltip]::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 3px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #0F172A transparent transparent transparent;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+  z-index: 99999;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before,
+[data-tooltip]:focus-visible::after,
+[data-tooltip]:focus-visible::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+[data-tooltip-align="right"]::after {
+  left: auto;
+  right: 0;
+  transform: translateY(4px);
+}
+[data-tooltip-align="right"]::before {
+  left: auto;
+  right: 12px;
+  transform: translateY(4px);
+}
+[data-tooltip-align="right"]:hover::after,
+[data-tooltip-align="right"]:hover::before {
+  transform: translateY(0);
+}
+
+[data-tooltip-align="left"]::after {
+  left: 0;
+  transform: translateY(4px);
+}
+[data-tooltip-align="left"]::before {
+  left: 12px;
+  transform: translateY(4px);
+}
+[data-tooltip-align="left"]:hover::after,
+[data-tooltip-align="left"]:hover::before {
+  transform: translateY(0);
+}
+
+/* ============================================================================
+   Accessible, GPU-Composited Action & Stage Transitions
+   All animations are subtle (opacity/transform) and automatically neutralized
+   under @media (prefers-reduced-motion: reduce) and body.calm-motion.
+   ============================================================================ */
+@keyframes dtFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes dtStageEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 6px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dtSlideUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dtZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dt-stage-enter {
+  animation: dtStageEnter 180ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-in.fade-in {
+  animation: dtFadeIn 160ms ease-out both;
+}
+
+.animate-in.slide-in-from-bottom {
+  animation: dtSlideUp 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-in.zoom-in-95 {
+  animation: dtZoomIn 160ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dt-stage-enter,
+  .animate-in.fade-in,
+  .animate-in.slide-in-from-bottom,
+  .animate-in.zoom-in-95 {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+body.calm-motion .dt-stage-enter,
+body.calm-motion .animate-in.fade-in,
+body.calm-motion .animate-in.slide-in-from-bottom,
+body.calm-motion .animate-in.zoom-in-95 {
+  animation: none !important;
+  transform: none !important;
+}
+
+/* ============================================================================
+   ADAPTIVE DISPLAY, TOUCH, 10-FOOT TV, LARGE FORMAT & USER-AGENT ADJUSTMENTS
+   ============================================================================ */
+
+/* Touch & Coarse Pointer Optimization */
+@media (pointer: coarse), (hover: none) {
+  button, a, select, input[type="range"] {
+    touch-action: manipulation;
+  }
+  input[type="range"] {
+    min-height: 36px;
+  }
+}
+
+/* Safe-Area Insets for iOS / Safari / Mobile Notch Devices */
+[data-ua-engine="webkit-safari"] body,
+[data-display-tier="compact-touch"] body {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Gecko / Firefox Clean Thin Scrollbars */
+[data-ua-engine="gecko-firefox"] * {
+  scrollbar-width: thin;
+}
+
+/* 10-Foot TV Display Mode (Overscan Safe Margins, 18px Base Type, Bold D-Pad Focus Halo) */
+[data-display-tier="tv-tenfoot"] {
+  font-size: 18px;
+}
+
+[data-display-tier="tv-tenfoot"] #root {
+  padding: 2vh 2.5vw;
+}
+
+[data-display-tier="tv-tenfoot"] *:focus-visible {
+  outline: 3px solid var(--theme-accent, #1074B1) !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 6px rgba(16, 116, 177, 0.25);
+}
+
+/* Large Format / Ultrawide 4K Displays */
+[data-display-tier="large-format"] .dt-large-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: 1.5rem;
+}
+
+/* Unified Spacious Default Layout */
+.main-stage-container main {
+  padding: 1.75rem 2rem;
+}
+
+.sidebar-container {
+  gap: 0.875rem;
+}
+
+/* Temporally Coherent GPU-Composited Gemstone & Pure CSS Animations */
+@keyframes dtGemFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -6px, 0) rotate(-1.5deg);
+  }
+}
+
+@keyframes dtGeminiStarGlow {
+  0%, 100% {
+    transform: translate3d(-50%, -50%, 0) scale(0.92) rotate(0deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate3d(-50%, -54%, 0) scale(1.12) rotate(12deg);
+    opacity: 1;
+  }
+}
+
+@keyframes dtDrawerEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes dtDockLabelEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(-6px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.dt-gem-float {
+  animation: dtGemFloat 4.4s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  will-change: transform;
+}
+
+.dt-gemini-star-glow {
+  animation: dtGeminiStarGlow 3.6s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.dt-drawer-enter {
+  animation: dtDrawerEnter 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: transform, opacity;
+}
+
+@starting-style {
+  .dt-drawer-enter {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0) scale(0.97);
+  }
+}
+
+.dock-nav-label {
+  animation: dtDockLabelEnter 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: transform, opacity;
+}
+
+@keyframes glFloatShape {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(12px, -16px, 0) rotate(3deg);
+  }
+  66% {
+    transform: translate3d(-10px, 12px, 0) rotate(-3deg);
+  }
+}
+
+.gl-float-shape {
+  animation: glFloatShape var(--gl-dur, 12s) ease-in-out var(--gl-delay, 0s) infinite;
+  will-change: transform;
+}
+
+/* Google Design: Gemini AI Visual Design — Spectrum Shift Orbiting Gradients */
+@keyframes gdGeminiOrbit1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(18vw, 10vh, 0) scale(1.14);
+  }
+  66% {
+    transform: translate3d(6vw, 22vh, 0) scale(0.95);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes gdGeminiOrbit2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(-16vw, -12vh, 0) scale(1.12);
+  }
+  66% {
+    transform: translate3d(-8vw, 10vh, 0) scale(0.94);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes gdGeminiOrbit3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(14vw, -16vh, 0) scale(1.15);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes gdGeminiSparklePulse {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.16;
+  }
+  50% {
+    transform: rotate(12deg) scale(1.06);
+    opacity: 0.28;
+  }
+}
+
+.gd-gemini-orb-1 {
+  animation: gdGeminiOrbit1 14s ease-in-out infinite;
+  will-change: transform;
+}
+
+.gd-gemini-orb-2 {
+  animation: gdGeminiOrbit2 18s ease-in-out infinite;
+  will-change: transform;
+}
+
+.gd-gemini-orb-3 {
+  animation: gdGeminiOrbit3 21s ease-in-out infinite;
+  will-change: transform;
+}
+
+.gd-gemini-sparkle {
+  animation: gdGeminiSparklePulse 12s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dt-gem-float,
+  .dt-gemini-star-glow,
+  .dt-drawer-enter,
+  .dock-nav-label,
+  .gl-float-shape,
+  .gd-gemini-orb-1,
+  .gd-gemini-orb-2,
+  .gd-gemini-orb-3,
+  .gd-gemini-sparkle {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body.calm-motion .dt-gem-float,
+body.calm-motion .dt-gemini-star-glow,
+body.calm-motion .dt-drawer-enter,
+body.calm-motion .dock-nav-label,
+body.calm-motion .gl-float-shape,
+body.calm-motion .gd-gemini-orb-1,
+body.calm-motion .gd-gemini-orb-2,
+body.calm-motion .gd-gemini-orb-3,
+body.calm-motion .gd-gemini-sparkle {
+  animation: none !important;
+  transition-duration: 0.01ms !important;
+}
+
+
+/* ==========================================================================
+   [WO-100] ADAPTIVE MULTI-DEVICE, AR SPATIAL & TRANSPARENT LIQUID GLASS MODES
+   ========================================================================== */
+
+/* Small Screen (<480px) & Mobile Phone: spacious touch targets, safe areas, compact chrome */
+[data-display-tier="small-screen"] .omnibox-header-container,
+[data-display-tier="mobile-phone"] .omnibox-header-container,
+[data-display-tier="small-screen"] .unified-footer-container,
+[data-display-tier="mobile-phone"] .unified-footer-container {
+  padding-left: max(0.5rem, env(safe-area-inset-left));
+  padding-right: max(0.5rem, env(safe-area-inset-right));
+}
+
+[data-display-tier="small-screen"] button,
+[data-display-tier="mobile-phone"] button,
+[data-display-tier="tablet"] button {
+  min-height: 44px;
+}
+
+/* Tablet (768-1024px): balanced 2-3 column media grid & comfortable touch spacing */
+[data-display-tier="tablet"] .drive-files-grid {
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.875rem;
+}
+
+/* TV 10-Foot Mode: high-visibility D-pad focus rings & enlarged legible typography */
+[data-display-tier="tv-tenfoot"] {
+  font-size: 118%;
+}
+[data-display-tier="tv-tenfoot"] button:focus-visible,
+[data-display-tier="tv-tenfoot"] [role="button"]:focus-visible,
+[data-display-tier="tv-tenfoot"] a:focus-visible {
+  outline: 3px solid var(--theme-accent, #38BDF8) !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.25) !important;
+}
+
+/* Large Format / Ultrawide (1920px+): centered ergonomic reading & browsing stage */
+[data-display-tier="large-format"] .main-stage-container {
+  max-width: 2400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* AR Spatial Mode (visionOS / Android XR / WebXR comfort-cone floating glass UI) */
+[data-display-tier="ar-spatial"] {
+  font-size: 112%;
+}
+[data-display-tier="ar-spatial"] button,
+[data-display-tier="ar-spatial"] [role="button"] {
+  min-height: 52px;
+  border-radius: 1.125rem;
+}
+[data-display-tier="ar-spatial"] .theme-card,
+[data-display-tier="ar-spatial"] .modal-card,
+[data-display-tier="ar-spatial"] .drawer-card,
+[data-display-tier="ar-spatial"] .secondary-header-container,
+[data-display-tier="ar-spatial"] .omnibox-header-container,
+[data-display-tier="ar-spatial"] .unified-footer-container {
+  background-color: rgba(20, 26, 36, 0.56) !important;
+  backdrop-filter: blur(24px) saturate(1.85) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.32) !important;
+  color: #F8FAFC !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+}
+
+/* Transparent Screen / Liquid Glass Mode (Transparent OLED #000000 pass-through + refractive glass) */
+[data-display-tier="transparent-oled"],
+[data-display-tier="transparent-oled"] body {
+  background: #000000 !important;
+  background-color: #000000 !important;
+}
+[data-display-tier="transparent-oled"] #dt-theme-stage,
+[data-display-tier="transparent-oled"] #dt-theme-wallpaper {
+  opacity: 0.14 !important;
+}
+[data-display-tier="transparent-oled"] .theme-card,
+[data-display-tier="transparent-oled"] .modal-card,
+[data-display-tier="transparent-oled"] .drawer-card,
+[data-display-tier="transparent-oled"] .secondary-header-container,
+[data-display-tier="transparent-oled"] .omnibox-header-container,
+[data-display-tier="transparent-oled"] .unified-footer-container,
+[data-display-tier="transparent-oled"] .sidebar-opaque-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.06) 55%,
+    rgba(147, 197, 253, 0.12) 100%
+  ) !important;
+  backdrop-filter: blur(20px) saturate(1.9) brightness(1.08) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.9) brightness(1.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.38) !important;
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.42),
+    inset 0 1px 1px rgba(255, 255, 255, 0.45),
+    inset 0 -1px 1px rgba(147, 197, 253, 0.22) !important;
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+}
+
+
+/* ==========================================================================
+   [WO-102] UNIFIED EASE-IN / EASE-OUT MOTION CHOREOGRAPHY
+   ========================================================================== */
+:root {
+  --motion-ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --motion-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes dtSmoothModalEnter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0) scale(0.975);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes dtSmoothDrawerRightEnter {
+  0% {
+    opacity: 0;
+    transform: translate3d(24px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dtSmoothFadeEnter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dt-motion-modal,
+[role="dialog"] > div {
+  animation: dtSmoothModalEnter 240ms var(--motion-ease-enter) both;
+}
+
+.dt-motion-drawer-right {
+  animation: dtSmoothDrawerRightEnter 260ms var(--motion-ease-enter) both;
+}
+
+.dt-motion-fade {
+  animation: dtSmoothFadeEnter 200ms var(--motion-ease-standard) both;
+}
+
+button,
+a,
+input,
+select,
+textarea,
+[role="tab"],
+[role="menuitem"] {
+  transition-timing-function: var(--motion-ease-standard);
+}

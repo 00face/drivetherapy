@@ -1,0 +1,8 @@
+{
+  "name": "Drive Therapy",
+  "description": "Intelligent Google Drive and local media organizer, speed culling studio, low-resource AI tagger, portfolio maker, and slideshow theater.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

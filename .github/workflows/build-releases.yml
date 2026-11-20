@@ -1,0 +1,78 @@
+name: Cross-Platform Native Executable, Portable & Android APK Builder
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  build-universal-and-native:
+    name: Build Universal Portable + Native Binaries (Win .exe, Linux, macOS, Android)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Setup Go 1.22
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Universal Portable Bundle & Cross-Compiled Native Executables
+        run: npm run build:portable-bundle
+
+      - name: Upload Universal Portable & Native Binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: DriveTherapy-Universal-Portable-and-Native-Binaries
+          path: release/*
+
+  build-android-apk:
+    name: Build Native Android WebView Studio Project
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Setup Android SDK 34
+        uses: android-actions/setup-android@v3
+
+      - name: Install dependencies & sync Android WebView project
+        run: |
+          npm ci
+          npm run build:android
+
+      - name: Upload Synced Android Studio Project
+        uses: actions/upload-artifact@v4
+        with:
+          name: DriveTherapy-Android-Project
+          path: android/
