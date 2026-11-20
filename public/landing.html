@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="brgg-zdHto-5nm9oqnYwtW8DblnywA1mQ0d0sg1wQZE" />
+  <meta name="google-site-verification" content="Cdt7bWfC5QFOslX42LCd9TM6q7GpABcpJ_ApG4k0Okc" />
+  <title>Drive Therapy (v2.2.0) — Accessible, Non-Destructive Google Workspace &amp; Media Studio</title>
+  <meta name="description" content="An accessible, non-destructive, local-first studio for managing Google Workspace, Google Drive, Google Photos/Takeout, and personal media with greater calm, clarity, and security." />
+  <meta property="og:title" content="Drive Therapy (v2.2.0) — Google Workspace &amp; Media Studio" />
+  <meta property="og:description" content="Accessible, non-destructive Google Workspace, Google Drive, Google Photos/Takeout, and local media curation studio." />
+  <meta property="og:image" content="./brand/drive-therapy-lockup-dark.png" />
+  <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16.png" />
+  <style>
+    :root {
+      --midnight: #101C31;
+      --contour: #1B283F;
+      --mint: #A9EFD0;
+      --teal: #1EB8B4;
+      --azure: #6EAEDC;
+      --violet: #595BD5;
+      --gold: #FFCB5D;
+      --amber: #CF8E30;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--midnight);
+      color: #E2E8F0;
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid #263854;
+      background: rgba(16, 28, 49, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+    .nav-bar {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      font-size: 0.92rem;
+    }
+    .nav-links a {
+      color: #CBD5E1;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: linear-gradient(180deg, #15243F 0%, #101C31 100%);
+      border: 1px solid #2A3F5F;
+      border-radius: 24px;
+      margin-bottom: 2.5rem;
+    }
+    .hero img.lockup {
+      max-width: 640px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      color: var(--gold);
+      font-size: 2.2rem;
+      margin: 0.5rem 0;
+    }
+    .hero p.subtitle {
+      max-width: 780px;
+      margin: 0.75rem auto 1.75rem;
+      font-size: 1.12rem;
+      color: #CBD5E1;
+    }
+    .btn-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0.7rem 1.4rem;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.96rem;
+      transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--gold);
+      color: #101C31;
+    }
+    .btn-teal {
+      background: var(--teal);
+      color: #101C31;
+    }
+    .btn-outline {
+      border: 1px solid #475E80;
+      color: #F8FAFC;
+      background: #17263F;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+    .card {
+      background: #16243D;
+      border: 1px solid #2A3D5C;
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+    .card h3 {
+      color: var(--gold);
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: rgba(30, 184, 180, 0.18);
+      color: var(--mint);
+      margin-bottom: 0.6rem;
+    }
+    .dl-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .dl-list li {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid #243552;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.92rem;
+    }
+    .dl-list li:last-child { border-bottom: none; }
+    .dl-list a { color: var(--azure); font-weight: 600; text-decoration: none; }
+    .dl-list a:hover { text-decoration: underline; }
+    footer {
+      border-top: 1px solid #263854;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94A3B8;
+    }
+    footer a { color: var(--azure); margin: 0 0.6rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <img src="./drive-therapy-logo-64.png" alt="Drive Therapy Icon" width="38" height="38" style="border-radius:8px;" />
+        <strong style="color:var(--gold);font-size:1.15rem;">Drive Therapy</strong>
+        <span class="badge" style="margin:0;">v2.2.0 · AGPL-3.0</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="./">Web Studio</a>
+        <a href="#downloads">Downloads (.exe / Linux / macOS / Android)</a>
+        <a href="#studios">9 Studios</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+        <a href="https://github.com/00face/drivetherapy" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <img class="lockup" src="./brand/drive-therapy-lockup-dark.png" alt="Drive Therapy Primary Brand Lockup" />
+      <h1>Calm, Accessible, Non-Destructive Google Workspace &amp; Media Management</h1>
+      <p class="subtitle">
+        Created to give people an easier, more accessible, and more secure way to organize and curate their
+        Google Drive, Google Photos/Takeout, and local media — with 52 WCAG AAA sensory-aware themes,
+        20 languages, offline perceptual burst grouping, and encrypted multi-account OAuth sessions.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="./">Launch Interactive Web Studio →</a>
+        <a class="btn btn-teal" href="https://github.com/00face/drivetherapy/releases/tag/v2.2.0" target="_blank" rel="noopener noreferrer">Download Prebuilt Binaries (v2.2.0)</a>
+        <a class="btn btn-outline" href="./privacy.html">Privacy &amp; Google Limited Use Policy</a>
+        <a class="btn btn-outline" href="./terms.html">Terms of Service</a>
+      </div>
+    </section>
+
+    <h2 id="downloads" style="color:var(--gold);">Prebuilt Native Executables &amp; Universal Portable Downloads</h2>
+    <div class="grid-3">
+      <div class="card">
+        <span class="badge">Windows 10 / 11 (x64)</span>
+        <h3>Windows Native Executable</h3>
+        <p>Zero-install native PE32+ executable. Automatically launches the full Express backend if Node.js is installed, or runs its built-in standalone server with zero dependencies.</p>
+        <ul class="dl-list">
+          <li><span>DriveTherapy.exe (5.60 MB)</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/DriveTherapy.exe">Download .exe</a></li>
+          <li><span>Universal Portable (.zip)</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/DriveTherapy-v2.2.0-universal-portable.zip">Download .zip</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="badge">Linux (x86_64) &amp; macOS (arm64 / x64)</span>
+        <h3>Linux &amp; macOS Native Binaries</h3>
+        <p>Native window decorations across GNOME, KDE Plasma, Hyprland, Sway, i3, XFCE (X11 &amp; Wayland), and macOS Apple Silicon &amp; Intel.</p>
+        <ul class="dl-list">
+          <li><span>Linux x86_64 (5.42 MB)</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/DriveTherapy-linux-x64">Download ELF</a></li>
+          <li><span>macOS Apple Silicon</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/DriveTherapy-macos-arm64">Download arm64</a></li>
+          <li><span>macOS Intel</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/DriveTherapy-macos-x64">Download x64</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="badge">Android (arm64-v8a) &amp; Checksums</span>
+        <h3>Android &amp; Universal Tarball</h3>
+        <p>Includes native Android ARM64 server binary, Gradle WebView Studio scaffold (<code>com.drivetherapy.studio</code>), and SHA-256 checksums.</p>
+        <ul class="dl-list">
+          <li><span>Android ARM64 (5.25 MB)</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/DriveTherapy-android-arm64">Download arm64</a></li>
+          <li><span>Universal Portable (.tar.gz)</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/DriveTherapy-v2.2.0-universal-portable.tar.gz">Download .tar.gz</a></li>
+          <li><span>SHA256SUMS.txt</span> <a href="https://github.com/00face/drivetherapy/releases/download/v2.2.0/SHA256SUMS.txt">Verify Hashes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="studios" style="color:var(--gold);">9 Integrated Studios &amp; Forthright Privacy Guarantees</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>1. Non-Destructive Culling &amp; Pixel Studio</h3>
+        <p>File Manager, Culling Room (`P`/`X`/`1–5` stars &amp; Vim `j`/`k`/`gg`/`G`), WebGL/Canvas LUT Pixel Editor, Portfolio Maker, Slideshow Theater, and GPS World Map. Ratings live in IndexedDB and Adobe `.xmp` sidecars—never mutating your original files without confirmation.</p>
+      </div>
+      <div class="card">
+        <h3>2. Encrypted Google Workspace Vault</h3>
+        <p>Connect multiple Google accounts concurrently via OAuth 2.0 PKCE. Tokens are stored in a local AES-256-GCM encrypted session vault (<code>dt_sid</code> <code>HttpOnly</code> cookie) and adhere strictly to the <strong>Google API Services User Data Policy (Limited Use)</strong>.</p>
+      </div>
+      <div class="card">
+        <h3>3. Cloud Power Suite &amp; 4-Tier Scanner</h3>
+        <p>Client-side WebCrypto PBKDF2 + AES-256-GCM Zero-Knowledge Vault, Content-Defined Chunking (CDC) delta sync, CRDT conflict resolution, persistent `/s/:slug` Hero Links with DLP rules, OpenSharing v1, and offline Tier-0 file malware heuristics.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <strong>Drive Therapy v2.2.0</strong> · Licensed under <a href="https://github.com/00face/drivetherapy/blob/main/LICENSE">GNU AGPL-3.0-or-later</a> ·
+      <a href="./privacy.html">Privacy Policy</a> ·
+      <a href="./terms.html">Terms of Service</a> ·
+      <a href="https://github.com/00face/drivetherapy/blob/main/docs/FAQ.md">FAQ</a> ·
+      <a href="https://github.com/00face/drivetherapy/blob/main/docs/wiki/Home.md">Wiki</a> ·
+      <a href="https://github.com/00face/drivetherapy">GitHub Repository</a>
+    </p>
+  </footer>
+</body>
+</html>
