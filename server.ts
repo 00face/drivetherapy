@@ -234,6 +234,10 @@ const OAUTH_SCOPES = [
 
 const OPTIONAL_EXTRA_SCOPES: Record<string, string[]> = {
   gcs: ['https://www.googleapis.com/auth/devstorage.read_only'],
+  photos_legacy: [
+    'https://www.googleapis.com/auth/photoslibrary.readonly',
+    'https://www.googleapis.com/auth/photoslibrary.readonly.appcreateddata',
+  ],
   gmail: [
     'https://www.googleapis.com/auth/gmail.readonly',
     'https://www.googleapis.com/auth/gmail.send',

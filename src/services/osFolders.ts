@@ -31,10 +31,11 @@ export function resolveOsCommonFolders(
 
   if (platform === 'linux') {
     // 1. Linux XDG User Dirs resolution
-    const xdgConfigFile = path.join(
-      process.env.XDG_CONFIG_HOME || path.join(homeDir, '.config'),
-      'user-dirs.dirs'
-    );
+    const xdgConfigDir =
+      homeDir === os.homedir() && process.env.XDG_CONFIG_HOME
+        ? process.env.XDG_CONFIG_HOME
+        : path.join(homeDir, '.config');
+    const xdgConfigFile = path.join(xdgConfigDir, 'user-dirs.dirs');
     const xdgMap: Record<string, { id: string; name: string; icon: string }> = {
       XDG_PICTURES_DIR: { id: 'pictures', name: 'Pictures', icon: 'Image' },
       XDG_DOWNLOAD_DIR: { id: 'downloads', name: 'Downloads', icon: 'Download' },

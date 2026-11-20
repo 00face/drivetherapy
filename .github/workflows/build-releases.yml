@@ -63,9 +63,6 @@ jobs:
           distribution: "temurin"
           java-version: "17"
 
-      - name: Setup Android SDK 34
-        uses: android-actions/setup-android@v3
-
       - name: Install dependencies & sync Android WebView project
         run: |
           npm ci

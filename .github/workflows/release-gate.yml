@@ -25,6 +25,11 @@ jobs:
           node-version: "22"
           cache: "npm"
 
+      - name: Setup Go 1.22
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
       - name: Clean dependency install
         run: npm ci
 
@@ -34,11 +39,13 @@ jobs:
       - name: TypeScript & Erasable Syntax static analysis
         run: npm run lint
 
+      - name: Build production bundle, portable native executables & Android scaffold
+        run: |
+          npm run build:portable-bundle
+          node scripts/buildAndroidScaffold.mjs
+
       - name: Automated unit, property, fuzz, security & lifecycle test suite
         run: npm test
-
-      - name: Clean production bundle build
-        run: npm run build
 
       - name: GraphML & Architecture topology validation
         run: npm run qa:probe
